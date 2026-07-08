@@ -22,7 +22,7 @@
         <!-- HEADER / HERO -->
         <header class="hero">
             <div class="avatar">
-                <span>🤵🏻‍♂️</span>
+                <img src="src/img/profile.png" alt="Ailton Rocha Cordeiro">
             </div>
             <h1 class="name">Ailton Rocha Cordeiro</h1>
             <p class="title">Analista de Sustentação N2 / ERP | Desenvolvedor Front-End Júnior</p>
@@ -35,6 +35,11 @@
                 <span class="badge">QA | IA</span>
                 <span class="badge">React</span>
                 <span class="badge">Git/GitHub</span>
+            </div>
+            <div class="numerology-container">
+                <a href="numerologia.html" class="numerology-btn">
+                    <i class="fas fa-sparkles"></i> Sobre Mim (Numerologia Pitagórica) 🔮
+                </a>
             </div>
         </header>
 
@@ -167,106 +172,25 @@
             <div class="tab-pane" id="formacoes">
                 <div class="info-card education-panel">
                     <h3><i class="fas fa-shield-alt"></i> Formações e Certificações</h3>
-                    <p class="panel-subtitle">Minhas credenciais acadêmicas e técnicas representadas como escudos de conquista.</p>
+                    <p class="panel-subtitle">Minhas credenciais acadêmicas e técnicas representadas como escudos de conquista. Clique em um escudo para visualizar o comprovante.</p>
                     
-                    <div class="shields-grid">
-                        <!-- Shield 1: Bacharelado -->
-                        <div class="shield-badge color-gold">
-                            <svg viewBox="0 0 140 180" class="shield-bg">
-                                <path d="M 5,5 H 135 V 150 L 70,175 L 5,150 Z" />
-                            </svg>
-                            <div class="shield-content">
-                                <div class="shield-icon"><i class="fas fa-university"></i></div>
-                                <div class="shield-title">GRADUAÇÃO</div>
-                                <div class="shield-desc">Engenharia da Computação</div>
-                                <div class="shield-ribbon">2018 - 2023</div>
-                                <div class="shield-status">Bacharel</div>
-                            </div>
+                    <!-- Filtros e Busca de Certificados -->
+                    <div class="cert-controls">
+                        <div class="filter-group">
+                            <button class="filter-btn active" data-filter="all">Todos</button>
+                            <button class="filter-btn" data-filter="core">Principais</button>
+                            <button class="filter-btn" data-filter="tech">Tecnologia</button>
+                            <button class="filter-btn" data-filter="linx">Linx Academy</button>
+                            <button class="filter-btn" data-filter="totvs">TOTVS / Seg</button>
                         </div>
+                        <div class="search-group">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="certSearch" placeholder="Buscar certificado pelo nome...">
+                        </div>
+                    </div>
 
-                        <!-- Shield 2: Dev Web -->
-                        <div class="shield-badge color-blue">
-                            <svg viewBox="0 0 140 180" class="shield-bg">
-                                <path d="M 5,5 H 135 V 150 L 70,175 L 5,150 Z" />
-                            </svg>
-                            <div class="shield-content">
-                                <div class="shield-icon"><i class="fas fa-code"></i></div>
-                                <div class="shield-title">FRONT-END</div>
-                                <div class="shield-desc">Web Development (HTML/CSS/JS)</div>
-                                <div class="shield-ribbon">2024 - 2025</div>
-                                <div class="shield-status">Certificado</div>
-                            </div>
-                        </div>
-
-                        <!-- Shield 3: SQL Server -->
-                        <div class="shield-badge color-teal">
-                            <svg viewBox="0 0 140 180" class="shield-bg">
-                                <path d="M 5,5 H 135 V 150 L 70,175 L 5,150 Z" />
-                            </svg>
-                            <div class="shield-content">
-                                <div class="shield-icon"><i class="fas fa-database"></i></div>
-                                <div class="shield-title">DATABASE</div>
-                                <div class="shield-desc">SQL Server / Banco de Dados</div>
-                                <div class="shield-ribbon">2025</div>
-                                <div class="shield-status">Certificado</div>
-                            </div>
-                        </div>
-
-                        <!-- Shield 4: Git / GitHub -->
-                        <div class="shield-badge color-purple">
-                            <svg viewBox="0 0 140 180" class="shield-bg">
-                                <path d="M 5,5 H 135 V 150 L 70,175 L 5,150 Z" />
-                            </svg>
-                            <div class="shield-content">
-                                <div class="shield-icon"><i class="fas fa-code-branch"></i></div>
-                                <div class="shield-title">CONTROLE</div>
-                                <div class="shield-desc">Git / GitHub Versioning</div>
-                                <div class="shield-ribbon">2025 - 2026</div>
-                                <div class="shield-status">Certificado</div>
-                            </div>
-                        </div>
-
-                        <!-- Shield 5: Robot Framework -->
-                        <div class="shield-badge color-darkblue">
-                            <svg viewBox="0 0 140 180" class="shield-bg">
-                                <path d="M 5,5 H 135 V 150 L 70,175 L 5,150 Z" />
-                            </svg>
-                            <div class="shield-content">
-                                <div class="shield-icon"><i class="fas fa-robot"></i></div>
-                                <div class="shield-title">AUTOMAÇÃO</div>
-                                <div class="shield-desc">Robot Framework (QA)</div>
-                                <div class="shield-ribbon">2025 - 2026</div>
-                                <div class="shield-status">Certificado</div>
-                            </div>
-                        </div>
-
-                        <!-- Shield 6: Redes / Cisco -->
-                        <div class="shield-badge color-orange">
-                            <svg viewBox="0 0 140 180" class="shield-bg">
-                                <path d="M 5,5 H 135 V 150 L 70,175 L 5,150 Z" />
-                            </svg>
-                            <div class="shield-content">
-                                <div class="shield-icon"><i class="fas fa-network-wired"></i></div>
-                                <div class="shield-title">INFRA</div>
-                                <div class="shield-desc">Redes de Computadores / Cisco</div>
-                                <div class="shield-ribbon">2019 - 2020</div>
-                                <div class="shield-status">Certificado</div>
-                            </div>
-                        </div>
-
-                        <!-- Shield 7: C# -->
-                        <div class="shield-badge color-pink">
-                            <svg viewBox="0 0 140 180" class="shield-bg">
-                                <path d="M 5,5 H 135 V 150 L 70,175 L 5,150 Z" />
-                            </svg>
-                            <div class="shield-content">
-                                <div class="shield-icon"><i class="fab fa-microsoft"></i></div>
-                                <div class="shield-title">BACKEND</div>
-                                <div class="shield-desc">Programação C# (.NET)</div>
-                                <div class="shield-ribbon">2024 - 2025</div>
-                                <div class="shield-status">Certificado</div>
-                            </div>
-                        </div>
+                    <div class="shields-grid" id="shieldsGrid">
+                        <!-- Os escudos serão gerados dinamicamente via JS -->
                     </div>
                 </div>
             </div>
@@ -515,6 +439,17 @@
         </div>
     </div>
 
+    <!-- Modal de Visualização de Certificado -->
+    <div id="certModal" class="modal">
+        <div class="modal-content" style="max-width: 800px; width: 90%; padding: 1.5rem; text-align: center; position: relative;">
+            <span class="close" id="closeCertModal" style="position: absolute; right: 20px; top: 15px; font-size: 2rem;">&times;</span>
+            <h3 id="certModalTitle" style="margin-bottom: 1.5rem; font-family: 'Outfit', sans-serif; font-size: 1.25rem;">Visualizar Certificado</h3>
+            <div style="width: 100%; max-height: 70vh; overflow-y: auto; display: flex; justify-content: center; align-items: center; border-radius: 12px; background: rgba(0,0,0,0.25); padding: 10px; border: 1px solid rgba(255,255,255,0.05);">
+                <img id="certModalImg" src="" alt="Certificado" style="max-width: 100%; max-height: 65vh; object-fit: contain; border-radius: 8px;">
+            </div>
+        </div>
+    </div>
+
     <!-- TAB NAVIGATOR AND PORTFOLIO SCRIPT -->
     <script>
         // Simple and smooth tab navigation logic
@@ -556,6 +491,7 @@
             animateSkills();
         });
     </script>
+    <script src="src/js/certificados.js"></script>
     <script src="src/js/script.js"></script>
 </body>
 </html>

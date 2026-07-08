@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Relatório de Numerologia Pitagórica | Ailton Rocha Cordeiro">
+    <title>Numerologia Pitagórica | Ailton Rocha Cordeiro</title>
+    <link rel="stylesheet" href="src/css/numerologia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Cosmic Background Effects -->
+    <div class="stars"></div>
+    <div class="nebula-1"></div>
+    <div class="nebula-2"></div>
+    <div class="nebula-3"></div>
+
+    <div class="container">
+        <!-- Navigation Header -->
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Voltar ao Portfólio
+        </a>
+
+        <!-- Title Section -->
+        <header class="cosmic-header">
+            <h1>Relatório de Numerologia Pitagórica</h1>
+            <p>Ailton Rocha Cordeiro</p>
+            <span class="date-badge">NASCIMENTO: 22/01/1999</span>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="cosmic-tabs">
+            <button class="cosmic-tab-btn active" data-tab="dashboard">
+                <i class="fas fa-chart-pie"></i> Painel Geral
+            </button>
+            <button class="cosmic-tab-btn" data-tab="interpretacao">
+                <i class="fas fa-book-open"></i> Interpretação
+            </button>
+            <button class="cosmic-tab-btn" data-tab="integracao">
+                <i class="fas fa-dharmachakra"></i> Integração & Vida
+            </button>
+            <button class="cosmic-tab-btn" data-tab="calculos">
+                <i class="fas fa-calculator"></i> Cálculos & Fórmulas
+            </button>
+        </nav>
+
+        <!-- TAB CONTENT PANELS -->
+        <main>
+            <!-- 1. PANEL: DASHBOARD GERAL -->
+            <section class="cosmic-pane active" id="dashboard">
+                <div class="cosmic-card">
+                    <h2><i class="fas fa-gem"></i> Seus Números Principais</h2>
+                    <p style="margin-bottom: 1.5rem; font-size: 0.95rem;">Clique em qualquer cartão de número para ver a interpretação detalhada na aba correspondente.</p>
+                    
+                    <div class="num-dashboard">
+                        <!-- Life Path -->
+                        <div class="num-card master-card" data-target="ip-lifepath">
+                            <span class="master-tag">Mestre</span>
+                            <div class="num-label">Life Path</div>
+                            <div class="num-value">33</div>
+                            <div class="num-title">O Mestre Professor</div>
+                        </div>
+
+                        <!-- Expression -->
+                        <div class="num-card" data-target="ip-expression">
+                            <div class="num-label">Expression</div>
+                            <div class="num-value">5</div>
+                            <div class="num-title">O Agente da Liberdade</div>
+                        </div>
+
+                        <!-- Soul Urge -->
+                        <div class="num-card" data-target="ip-soulurge">
+                            <div class="num-label">Soul Urge</div>
+                            <div class="num-value">4</div>
+                            <div class="num-title">O Construtor Interior</div>
+                        </div>
+
+                        <!-- Personality -->
+                        <div class="num-card" data-target="ip-personality">
+                            <div class="num-label">Personality</div>
+                            <div class="num-value">1</div>
+                            <div class="num-title">Imagem de Liderança</div>
+                        </div>
+
+                        <!-- Maturity -->
+                        <div class="num-card master-card" data-target="ip-maturity">
+                            <span class="master-tag">Mestre</span>
+                            <div class="num-label">Maturity</div>
+                            <div class="num-value">11</div>
+                            <div class="num-title">O Idealista Intuitivo</div>
+                        </div>
+                    </div>
+
+                    <!-- Tabela Resumo -->
+                    <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.25rem; color: white; margin-top: 2rem; margin-bottom: 1rem;">Tabela de Resultados</h3>
+                    <div class="table-wrapper">
+                        <table class="cosmic-table">
+                            <thead>
+                                <tr>
+                                    <th>Aspecto Numerológico</th>
+                                    <th>Número</th>
+                                    <th>Descrição Resumida</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Caminho de Vida (Life Path)</strong></td>
+                                    <td class="num-cell">33</td>
+                                    <td>Amor incondicional, compaixão elevada e vocação para ensinar ou inspirar.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Número do Destino (Expression)</strong></td>
+                                    <td class="num-cell">5</td>
+                                    <td>Versatilidade, curiosidade, adaptabilidade e necessidade de movimento.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Número da Alma (Soul Urge)</strong></td>
+                                    <td class="num-cell">4</td>
+                                    <td>Necessidade profunda de segurança, estabilidade, ordem e consistência.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Personalidade Externa (Personality)</strong></td>
+                                    <td class="num-cell">1</td>
+                                    <td>Imagem de iniciativa, independência, firmeza e presença decidida.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Maturidade (Maturity)</strong></td>
+                                    <td class="num-cell">11</td>
+                                    <td>Intuição e sensibilidade elevadas, potencial inspirador na maturidade.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Tabela Pitagórica Referencial -->
+                <div class="cosmic-card">
+                    <h2><i class="fas fa-table"></i> Tabela Pitagórica Utilizada</h2>
+                    <p style="font-size: 0.95rem; margin-bottom: 1rem;">Esta é a tabela matemática que mapeia as letras do alfabeto (sem acentuações) aos números de 1 a 9 no método Pitagórico:</p>
+                    <div class="pythagorean-grid">
+                        <div class="pyth-col">
+                            <div class="pyth-num">1</div>
+                            <div class="pyth-letters"><span>A</span><span>J</span><span>S</span></div>
+                        </div>
+                        <div class="pyth-col">
+                            <div class="pyth-num">2</div>
+                            <div class="pyth-letters"><span>B</span><span>K</span><span>T</span></div>
+                        </div>
+                        <div class="pyth-col">
+                            <div class="pyth-num">3</div>
+                            <div class="pyth-letters"><span>C</span><span>L</span><span>U</span></div>
+                        </div>
+                        <div class="pyth-col">
+                            <div class="pyth-num">4</div>
+                            <div class="pyth-letters"><span>D</span><span>M</span><span>V</span></div>
+                        </div>
+                        <div class="pyth-col">
+                            <div class="pyth-num">5</div>
+                            <div class="pyth-letters"><span>E</span><span>N</span><span>W</span></div>
+                        </div>
+                        <div class="pyth-col">
+                            <div class="pyth-num">6</div>
+                            <div class="pyth-letters"><span>F</span><span>O</span><span>X</span></div>
+                        </div>
+                        <div class="pyth-col">
+                            <div class="pyth-num">7</div>
+                            <div class="pyth-letters"><span>G</span><span>P</span><span>Y</span></div>
+                        </div>
+                        <div class="pyth-col">
+                            <div class="pyth-num">8</div>
+                            <div class="pyth-letters"><span>H</span><span>Q</span><span>Z</span></div>
+                        </div>
+                        <div class="pyth-col">
+                            <div class="pyth-num">9</div>
+                            <div class="pyth-letters"><span>I</span><span>R</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. PANEL: INTERPRETAÇÃO DETALHADA -->
+            <section class="cosmic-pane" id="interpretacao">
+                <div class="cosmic-card">
+                    <h2><i class="fas fa-scroll"></i> Significado dos Seus Números</h2>
+
+                    <!-- Life Path 33 -->
+                    <div class="interpretation-item" id="ip-lifepath">
+                        <h3 class="interpretation-title master-title">
+                            <span class="num-badge">33</span> Life Path (Caminho de Vida) — "O Mestre Professor"
+                        </h3>
+                        <p class="interpretation-quote">Vocação humanitária e dedicação espiritual ao coletivo.</p>
+                        <p class="interpretation-text">
+                            Um dos números mais raros e exigentes da numerologia. Simboliza amor incondicional, compaixão elevada e vocação para servir, curar, ensinar ou inspirar coletivos inteiros. Carrega grande responsabilidade emocional e espiritual; o desafio é não se anular em função dos outros e sustentar a própria estrutura enquanto cuida de tudo ao redor.
+                        </p>
+                    </div>
+
+                    <!-- Expression 5 -->
+                    <div class="interpretation-item" id="ip-expression">
+                        <h3 class="interpretation-title">
+                            <span class="num-badge">5</span> Expression Number (Destino) — "O Agente da Liberdade e Mudança"
+                        </h3>
+                        <p class="interpretation-quote">Movimento constante, versatilidade e curiosidade de espírito.</p>
+                        <p class="interpretation-text">
+                            Fala sobre versatilidade, curiosidade, adaptabilidade e necessidade de movimento. É a energia de quem aprende fazendo, testando, experimentando várias frentes. O risco é dispersão e dificuldade de compromisso de longo prazo se não houver direção clara.
+                        </p>
+                    </div>
+
+                    <!-- Soul Urge 4 -->
+                    <div class="interpretation-item" id="ip-soulurge">
+                        <h3 class="interpretation-title">
+                            <span class="num-badge">4</span> Soul Urge (Número da Alma) — "O Construtor Interior"
+                        </h3>
+                        <p class="interpretation-quote">Desejo íntimo de estabilidade, segurança e organização.</p>
+                        <p class="interpretation-text">
+                            No plano da motivação mais profunda, existe forte necessidade de segurança, ordem, estrutura e trabalho consistente. Por dentro, essa pessoa deseja estabilidade, mesmo que sua expressão externa (5) seja de movimento e mudança — isso já indica uma tensão interna importante.
+                        </p>
+                    </div>
+
+                    <!-- Personality 1 -->
+                    <div class="interpretation-item" id="ip-personality">
+                        <h3 class="interpretation-title">
+                            <span class="num-badge">1</span> Personality Number (Personalidade) — "A Imagem de Liderança"
+                        </h3>
+                        <p class="interpretation-quote">Primeira impressão de autonomia, decisão e pioneirismo.</p>
+                        <p class="interpretation-text">
+                            Na primeira impressão, transmite iniciativa, independência e firmeza. É percebido(a) como alguém decidido, direto, com presença de líder, mesmo quando por dentro busca estabilidade (4) e no destino busca liberdade (5).
+                        </p>
+                    </div>
+
+                    <!-- Maturity 11 -->
+                    <div class="interpretation-item" id="ip-maturity">
+                        <h3 class="interpretation-title master-title">
+                            <span class="num-badge">11</span> Maturity Number (Maturidade) — "O Idealista Intuitivo"
+                        </h3>
+                        <p class="interpretation-quote">Amadurecimento voltado à sensibilidade psíquica e inspiração.</p>
+                        <p class="interpretation-text">
+                            Número mestre que costuma amadurecer com mais força a partir da segunda metade da vida. Aponta para sensibilidade elevada, intuição forte e potencial de inspirar outras pessoas através de ideias, arte, espiritualidade ou ensino — desde que a ansiedade e a autocobrança (características típicas do 11) sejam bem trabalhadas.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. PANEL: INTEGRAÇÃO E VIDA -->
+            <section class="cosmic-pane" id="integracao">
+                <div class="cosmic-card">
+                    <h2><i class="fas fa-adjust"></i> Integração dos Seus Números</h2>
+                    <p class="integration-intro">
+                        Análise de síntese: Há um padrão evidente de tensão entre estrutura e liberdade, e entre serviço aos outros e cuidado consigo:
+                    </p>
+                    <ul class="integration-points">
+                        <li>
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <div>
+                                <strong>Cuidado ao Coletivo vs. Cuidado Próprio:</strong> O Life Path 33 pede doação, cuidado com o coletivo e responsabilidade emocional elevada.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-shield-halved"></i>
+                            <div>
+                                <strong>Segurança Emocional Necessária:</strong> O Soul Urge 4 pede exatamente o oposto disso emocionalmente: segurança, rotina, base sólida antes de se doar.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-wind"></i>
+                            <div>
+                                <strong>Impulso de Mudança:</strong> O Expression 5 empurra para fora dessa base, em busca de mudança, novidade e liberdade de ação.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-crown"></i>
+                            <div>
+                                <strong>Máscara Externa:</strong> A Personality 1 projeta ao mundo uma imagem de líder autônomo e decidido — o que pode mascarar, para quem observa de fora, tanto a necessidade de estabilidade (4) quanto a vocação de entrega ao próximo (33).
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-star-of-david"></i>
+                            <div>
+                                <strong>Destino na Maturidade:</strong> A Maturity 11 amplia tudo isso: sugere que, com o tempo, a intuição e a sensibilidade tendem a crescer, empurrando a pessoa para um papel de inspiração e liderança mais espiritual ou idealista.
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- Aspectos de Vida Grid -->
+                    <div class="aspects-grid">
+                        <!-- Talentos -->
+                        <div class="aspect-card talentos">
+                            <h3><i class="fas fa-star"></i> Talentos</h3>
+                            <p>Capacidade de liderança natural, versatilidade para atuar em áreas diferentes, sensibilidade para captar necessidades alheias e potencial de grande impacto positivo em grupos ou comunidades.</p>
+                        </div>
+
+                        <!-- Desafios -->
+                        <div class="aspect-card desafios">
+                            <h3><i class="fas fa-triangle-exclamation"></i> Desafios</h3>
+                            <p>Conciliar a necessidade de estabilidade (4) com o desejo de mudança constante (5); não se sobrecarregar tentando "salvar" ou cuidar de todos (sombra do 33); administrar ansiedade e autocobrança típicas do 11; equilibrar a imagem de independência (1) com a real necessidade de conexão e serviço.</p>
+                        </div>
+
+                        <!-- Carreira -->
+                        <div class="aspect-card carreira">
+                            <h3><i class="fas fa-map-signs"></i> Carreira</h3>
+                            <p>Tende a se destacar em áreas que envolvam ensino, orientação, cuidado, comunicação ou liderança de projetos com propósito humano — desde que tenha liberdade de movimento dentro da estrutura.</p>
+                        </div>
+
+                        <!-- Relacionamentos -->
+                        <div class="aspect-card relacionamentos">
+                            <h3><i class="fas fa-heart"></i> Relacionamentos</h3>
+                            <p>Pode parecer autossuficiente (Personality 1), mas internamente busca segurança (Soul Urge 4) e tem grande capacidade de entrega afetiva (Life Path 33) — o equilíbrio está em não confundir cuidar do outro com abrir mão de si mesmo.</p>
+                        </div>
+
+                        <!-- Espiritualidade -->
+                        <div class="aspect-card espiritualidade">
+                            <h3><i class="fas fa-dove"></i> Espiritualidade</h3>
+                            <p>Com Life Path 33 e Maturity 11, há forte potencial de desenvolvimento espiritual ao longo da vida, especialmente após períodos de amadurecimento emocional, favorecendo práticas ligadas a ensino, cura ou orientação de outras pessoas.</p>
+                        </div>
+                    </div>
+
+                    <div class="esoteric-note">
+                        <strong>Observação importante:</strong> a numerologia é uma prática esotérica e simbólica, baseada em tradições culturais e místicas, e não é um método reconhecido pela ciência para descrever ou prever traços de personalidade, comportamento ou destino. Esta interpretação deve ser vista como ferramenta de autoconhecimento e reflexão, não como diagnóstico ou verdade objetiva sobre a pessoa.
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. PANEL: CÁLCULOS E FÓRMULAS -->
+            <section class="cosmic-pane" id="calculos">
+                <div class="cosmic-card">
+                    <h2><i class="fas fa-calculator"></i> Cálculos Passo a Passo (Ailton)</h2>
+                    <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Veja a lógica matemática por trás dos números calculados para o nome <strong>Ailton Rocha Cordeiro</strong> e data de nascimento <strong>22/01/1999</strong>:</p>
+
+                    <!-- Formula: Life Path -->
+                    <div class="formula-block">
+                        <h3>1) Life Path (Caminho de Vida)</h3>
+                        <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">Soma de todos os dígitos individuais da data de nascimento (dia, mês e ano):</p>
+                        <div class="formula-steps">
+Dia: 22 &rarr; 2 + 2 = 4
+Mês: 01 &rarr; 0 + 1 = 1
+Ano: 1999 &rarr; 1 + 9 + 9 + 9 = 28 &rarr; 2 + 8 = 10 &rarr; 1 + 0 = 1
+
+Soma Individual dos Dígitos: 2 + 2 + 0 + 1 + 1 + 9 + 9 + 9 = 33
+                        </div>
+                        <div class="formula-result">
+                            Resultado: <span class="highlight">33</span>
+                            <span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted);">(33 é Número Mestre &rarr; mantido sem redução)</span>
+                        </div>
+                    </div>
+
+                    <!-- Formula: Expression -->
+                    <div class="formula-block">
+                        <h3>2) Expression Number (Destino)</h3>
+                        <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">Soma dos valores pitagóricos de todas as letras do nome completo:</p>
+                        <div class="formula-steps">
+AILTON: A(1) + I(9) + L(3) + T(2) + O(6) + N(5) = 26
+ROCHA: R(9) + O(6) + C(3) + H(8) + A(1) = 27
+CORDEIRO: C(3) + O(6) + R(9) + D(4) + E(5) + I(9) + R(9) + O(6) = 51
+
+Soma total: 26 + 27 + 51 = 104
+Redução: 1 + 0 + 4 = 5
+                        </div>
+                        <div class="formula-result">
+                            Resultado: <span class="highlight">5</span>
+                        </div>
+                    </div>
+
+                    <!-- Formula: Soul Urge -->
+                    <div class="formula-block">
+                        <h3>3) Soul Urge (Número da Alma)</h3>
+                        <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">Soma dos valores pitagóricos apenas das vogais do nome completo:</p>
+                        <div class="formula-steps">
+AILTON: A(1) + I(9) + O(6) = 16
+ROCHA: O(6) + A(1) = 7
+CORDEIRO: O(6) + E(5) + I(9) + O(6) = 26
+
+Soma total: 16 + 7 + 26 = 49
+Redução: 4 + 9 = 13 &rarr; 1 + 3 = 4
+                        </div>
+                        <div class="formula-result">
+                            Resultado: <span class="highlight">4</span>
+                        </div>
+                    </div>
+
+                    <!-- Formula: Personality -->
+                    <div class="formula-block">
+                        <h3>4) Personality Number (Personalidade)</h3>
+                        <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">Soma dos valores pitagóricos apenas das consoantes do nome completo:</p>
+                        <div class="formula-steps">
+AILTON: L(3) + T(2) + N(5) = 10
+ROCHA: R(9) + C(3) + H(8) = 20
+CORDEIRO: C(3) + R(9) + D(4) + R(9) = 25
+
+Soma total: 10 + 20 + 25 = 55
+Redução: 5 + 5 = 10 &rarr; 1 + 0 = 1
+                        </div>
+                        <div class="formula-result">
+                            Resultado: <span class="highlight">1</span>
+                            <span class="check-mark"><i class="fas fa-circle-check"></i> Verificação: Vogais (49) + Consoantes (55) = 104 (Mesmo total do Destino) ✔</span>
+                        </div>
+                    </div>
+
+                    <!-- Formula: Maturity -->
+                    <div class="formula-block">
+                        <h3>5) Maturity Number (Maturidade)</h3>
+                        <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">Soma do Caminho de Vida (Life Path) + Número do Destino (Expression):</p>
+                        <div class="formula-steps">
+Life Path (33) + Expression (5) = 38
+Redução: 3 + 8 = 11
+                        </div>
+                        <div class="formula-result">
+                            Resultado: <span class="highlight">11</span>
+                            <span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted);">(11 é Número Mestre &rarr; mantido sem redução)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DYNAMIC CALCULATOR -->
+                <div class="calculator-section">
+                    <div class="calc-box">
+                        <h2><i class="fas fa-magic"></i> Calculadora Numerológica Pitagórica</h2>
+                        <p class="subtitle">Insira outro nome e data para realizar as somas matemáticas e gerar as reduções pitagóricas em tempo real!</p>
+                        
+                        <form id="calcForm" class="calc-form">
+                            <div class="input-group">
+                                <label for="fullName">Nome Completo (sem acentos)</label>
+                                <input type="text" id="fullName" placeholder="Ex: Ailton Rocha Cordeiro" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="birthDate">Data de Nascimento</label>
+                                <input type="date" id="birthDate" required>
+                            </div>
+                            <button type="submit" class="calc-btn">Calcular Somas</button>
+                        </form>
+
+                        <!-- Dynamic results -->
+                        <div id="calcResults" class="calc-results">
+                            <div class="num-card" id="cardLifePath">
+                                <div class="num-label">Life Path</div>
+                                <div class="num-value" id="resLifePath">-</div>
+                                <div class="num-title" id="titleLifePath">-</div>
+                            </div>
+                            <div class="num-card" id="cardExpression">
+                                <div class="num-label">Expression</div>
+                                <div class="num-value" id="resExpression">-</div>
+                                <div class="num-title" id="titleExpression">-</div>
+                            </div>
+                            <div class="num-card" id="cardSoulUrge">
+                                <div class="num-label">Soul Urge</div>
+                                <div class="num-value" id="resSoulUrge">-</div>
+                                <div class="num-title" id="titleSoulUrge">-</div>
+                            </div>
+                            <div class="num-card" id="cardPersonality">
+                                <div class="num-label">Personality</div>
+                                <div class="num-value" id="resPersonality">-</div>
+                                <div class="num-title" id="titlePersonality">-</div>
+                            </div>
+                            <div class="num-card" id="cardMaturity">
+                                <div class="num-label">Maturity</div>
+                                <div class="num-value" id="resMaturity">-</div>
+                                <div class="num-title" id="titleMaturity">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Ailton Rocha Cordeiro. Relatório de Numerologia Pitagórica.</p>
+            <p style="font-size: 0.75rem; color: rgba(255,255,255,0.2); margin-top: 0.2rem;">Desenvolvido com técnicas de Web Design Premium.</p>
+        </footer>
+    </div>
+
+    <!-- Script connection -->
+    <script src="src/js/numerologia.js"></script>
+</body>
+</html>

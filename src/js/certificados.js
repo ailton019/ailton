@@ -751,4 +751,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial render
     renderCertificates();
+    window.portfolioCertificates = certificates;
 });

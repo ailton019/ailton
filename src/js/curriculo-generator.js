@@ -310,8 +310,8 @@
         y += 9.5;
 
         if (dados.certificacoes_destaque && Array.isArray(dados.certificacoes_destaque)) {
-            const certText = dados.certificacoes_destaque.map(c => `${c.nome} – ${c.emissor} – ${c.ano}`).join(' | ');
-            const certLines = doc.splitTextToSize(`Certificações: ${certText}`, contentWidth);
+            const certText = dados.certificacoes_destaque.map(c => c.ano ? `${c.nome} – ${c.emissor} – ${c.ano}` : `${c.nome} – ${c.emissor}`).join(' | ');
+            const certLines = doc.splitTextToSize(`Certificações & Cursos: ${certText}`, contentWidth);
             doc.text(certLines, marginX, y);
             y += (certLines.length * 9.2) + 2;
         }

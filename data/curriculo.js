@@ -24,7 +24,7 @@ window.CURRICULO_DATA = {
       },
       {
         "idioma": "Inglês",
-        "nivel": "Avançado (leitura técnica de documentação e análise de logs)"
+        "nivel": "Básico"
       }
     ]
   },
@@ -114,19 +114,9 @@ window.CURRICULO_DATA = {
   ],
   "certificacoes_destaque": [
     {
-      "nome": "Automação de Testes de Software com Robot Framework",
-      "emissor": "[PREENCHER: Instituição]",
-      "ano": "[PREENCHER: Ano]"
-    },
-    {
       "nome": "SQL Server e Modelagem de Dados Relacionais",
-      "emissor": "[PREENCHER: Instituição]",
-      "ano": "[PREENCHER: Ano]"
-    },
-    {
-      "nome": "Testes e Validação de APIs REST com Postman",
-      "emissor": "[PREENCHER: Instituição]",
-      "ano": "[PREENCHER: Ano]"
+      "emissor": "Faculdade Líbano",
+      "ano": "2026"
     },
     {
       "nome": "Versionamento de Código com Git e GitHub",
@@ -136,7 +126,17 @@ window.CURRICULO_DATA = {
     {
       "nome": "Sustentação e Rotinas Operacionais ERP Microvix",
       "emissor": "Linx Academy",
-      "ano": "[PREENCHER: Ano]"
+      "ano": "2023"
+    },
+    {
+      "nome": "Testes e Validação de APIs REST com Postman",
+      "emissor": "Linx / TOTVS (Capacitação Prática)",
+      "ano": "2023"
+    },
+    {
+      "nome": "Automação de Testes com Robot Framework",
+      "emissor": "Estudo Autônomo e Projetos Práticos",
+      "ano": "2024"
     }
   ],
   "projetos": [

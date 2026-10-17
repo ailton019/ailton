@@ -233,7 +233,7 @@
 
         // 3. COMPETÊNCIAS TÉCNICAS
         addSectionHeader('Competências Técnicas');
-        const compKeys = ['banco_de_dados', 'qa_automacao', 'erp_sustentacao', 'complementares'];
+        const compKeys = Object.keys(dados.competencias || {});
         compKeys.forEach(k => {
             const c = dados.competencias?.[k];
             if (!c) return;
@@ -277,7 +277,7 @@
             doc.setFont('helvetica', 'normal');
             doc.setFontSize(7.9);
             doc.setTextColor(71, 85, 105);
-            const pDesc = `${proj.problema} [Demo: ${proj.demo}]`;
+            const pDesc = `${proj.problema} [Código: ${proj.codigo} | Demo: ${proj.demo}]`;
             const pLines = doc.splitTextToSize(pDesc, contentWidth - 4);
             doc.text(pLines, marginX + 3, y);
             y += (pLines.length * 9.2) + 2;
@@ -290,7 +290,7 @@
             doc.setFont('helvetica', 'bold');
             doc.setFontSize(8.2);
             doc.setTextColor(15, 23, 42);
-            doc.text(`${f.curso} - ${f.instituicao}`, marginX, y);
+            doc.text(`${f.curso} – ${f.instituicao}`, marginX, y);
 
             doc.setFont('helvetica', 'normal');
             doc.setFontSize(8.0);
@@ -310,9 +310,10 @@
         y += 9.5;
 
         if (dados.certificacoes_destaque && Array.isArray(dados.certificacoes_destaque)) {
-            const certText = dados.certificacoes_destaque.map(c => `${c.nome} (${c.emissor})`).join(' | ');
-            doc.text(`Certificações Chave: ${certText}`, marginX, y);
-            y += 10;
+            const certText = dados.certificacoes_destaque.map(c => `${c.nome} – ${c.emissor} – ${c.ano}`).join(' | ');
+            const certLines = doc.splitTextToSize(`Certificações: ${certText}`, contentWidth);
+            doc.text(certLines, marginX, y);
+            y += (certLines.length * 9.2) + 2;
         }
 
         const nomeArquivo = 'Ailton_Rocha_Cordeiro_Curriculo.pdf';
@@ -364,13 +365,12 @@
                     <ul>${e.bullets.map(b => `<li>${b}</li>`).join('')}</ul>
                 `).join('')}
                 <h2>Competências Técnicas</h2>
-                <p><strong>Banco de Dados:</strong> ${dados.competencias.banco_de_dados.itens.join(' | ')}</p>
-                <p><strong>QA & Testes:</strong> ${dados.competencias.qa_automacao.itens.join(' | ')}</p>
-                <p><strong>Sistemas ERP:</strong> ${dados.competencias.erp_sustentacao.itens.join(' | ')}</p>
+                ${Object.values(dados.competencias || {}).map(c => `<p><strong>${c.nome}:</strong> ${c.itens.join(' | ')}</p>`).join('')}
                 <h2>Formação Acadêmica</h2>
-                ${dados.formacao.map(f => `<p><strong>${f.curso}</strong> - ${f.instituicao} (${f.periodo})</p>`).join('')}
+                ${dados.formacao.map(f => `<p><strong>${f.curso}</strong> – ${f.instituicao} (${f.periodo})</p>`).join('')}
                 <h2>Idiomas & Certificações</h2>
                 <p>Idiomas: ${perfil.idiomas.map(i => `${i.idioma}: ${i.nivel}`).join(' | ')}</p>
+                ${dados.certificacoes_destaque ? `<p>Certificações: ${dados.certificacoes_destaque.map(c => `${c.nome} – ${c.emissor} – ${c.ano}`).join(' | ')}</p>` : ''}
                 <script>window.onload = function() { window.print(); };</script>
             </body>
             </html>

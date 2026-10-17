@@ -3,569 +3,457 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="description" content="Currículo online de Desenvolvedor Front-End Júnior | Ailton Rocha Cordeiro">
-    <title>Portfólio | Ailton Rocha Cordeiro</title>
-    <link rel="stylesheet" href="src/css/style.css">
+    <meta name="description" content="Engenheiro da Computação e pós-graduado em Banco de Dados com 4 anos na Linx (Stone Co.). Analista de Sistemas Júnior | Banco de Dados (SQL) | QA e Testes de Software.">
+    <title>Ailton Rocha Cordeiro | Analista de Sistemas Júnior | Banco de Dados (SQL) | QA e Testes</title>
+    
+    <!-- Open Graph / Meta Compartilhamento -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ailton019.github.io/ailton/">
+    <meta property="og:title" content="Ailton Rocha Cordeiro | Analista de Sistemas Júnior | Banco de Dados (SQL) | QA e Testes">
+    <meta property="og:description" content="Engenheiro da Computação e pós-graduado em Banco de Dados com 4 anos na Linx (Stone Co.). RCA com SQL Server, 100% SLA em chamados críticos e validação de APIs REST.">
+    <meta property="og:image" content="https://ailton019.github.io/ailton/src/img/profile.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ailton Rocha Cordeiro | Analista de Sistemas | SQL | QA">
+    <meta name="twitter:description" content="4 anos de Linx (Stone Co.), Pós em Banco de Dados, RCA com SQL Server e automação de testes.">
+    <meta name="twitter:image" content="https://ailton019.github.io/ailton/src/img/profile.png">
+
+    <link rel="stylesheet" href="src/css/style.css?v=20261017">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="shortcut icon" href="./src/img/homem-de-terno-e-gravata.png" type="image/x-icon">
 </head>
 <body>
-    <!-- Decorative frosted background glow blobs -->
-    <div class="bg-glow-1"></div>
-    <div class="bg-glow-2"></div>
-    <div class="grid-bg"></div>
+    <!-- Decorative subtle ambient background -->
+    <div class="bg-glow-1" aria-hidden="true"></div>
+    <div class="bg-glow-2" aria-hidden="true"></div>
+    <div class="grid-bg" aria-hidden="true"></div>
 
     <div class="container">
         <!-- HEADER / HERO -->
         <header class="hero">
             <div class="avatar">
-                <img src="src/img/profile.png" alt="Ailton Rocha Cordeiro">
+                <img src="src/img/profile.png" alt="Ailton Rocha Cordeiro - Foto Profissional">
             </div>
             <h1 class="name">Ailton Rocha Cordeiro</h1>
-            <p class="title">Analista de Sustentação N2 / ERP | Desenvolvedor Front-End Júnior</p>
+            <p class="title">Analista de Sistemas Júnior | Banco de Dados (SQL) | QA e Testes de Software</p>
+            
             <div class="badges">
-                <span class="badge">HTML5</span>
-                <span class="badge">CSS3</span>
-                <span class="badge">JavaScript</span>
-                <span class="badge">SQL Server</span>
-                <span class="badge">ERP</span>
-                <span class="badge">QA | IA</span>
-                <span class="badge">React</span>
-                <span class="badge">Git/GitHub</span>
+                <span class="badge">SQL Server (Queries & RCA)</span>
+                <span class="badge">QA & Testes Funcionais</span>
+                <span class="badge">Validação de APIs (Postman)</span>
+                <span class="badge">ERP Microvix / TOTVS</span>
+                <span class="badge">Robot Framework</span>
+                <span class="badge">100% SLA em Incidentes N2</span>
+                <span class="badge">Git / GitHub</span>
+                <span class="badge">Engenharia & Pós em Banco de Dados</span>
             </div>
+
             <div class="hero-actions">
-                <button type="button" id="downloadCvBtn" class="download-cv-btn" title="Baixar Currículo Profissional em PDF">
+                <button type="button" id="downloadCvBtn" class="download-cv-btn" title="Baixar Currículo Profissional Único em PDF">
                     <i class="fas fa-file-pdf"></i> Baixar Currículo (PDF)
                 </button>
-                <a href="numerologia.html" class="numerology-btn">
-                    <i class="fas fa-sparkles"></i> Sobre Mim (Numerologia Pitagórica) 🔮
+                <a href="https://www.linkedin.com/in/ailton-rocha-b32206172/" target="_blank" rel="noopener noreferrer" class="hero-social-btn" title="Acessar perfil no LinkedIn">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/ailton019" target="_blank" rel="noopener noreferrer" class="hero-social-btn" title="Acessar repositórios no GitHub">
+                    <i class="fab fa-github"></i> GitHub
                 </a>
             </div>
         </header>
 
         <!-- NAVIGATION MENU (TABS) -->
-        <nav class="tab-navigation">
+        <nav class="tab-navigation" aria-label="Navegação por abas">
             <button class="tab-btn active" data-tab="sobre">
-                <i class="fas fa-user-circle"></i> Perfil & Skills
+                <i class="fas fa-user-circle"></i> Perfil & Competências
             </button>
             <button class="tab-btn" data-tab="experiencia">
                 <i class="fas fa-briefcase"></i> Experiência
             </button>
             <button class="tab-btn" data-tab="formacoes">
-                <i class="fas fa-graduation-cap"></i> Formações
+                <i class="fas fa-graduation-cap"></i> Formação e Certificações
             </button>
             <button class="tab-btn" data-tab="projetos">
-                <i class="fas fa-trophy"></i> Conquistas
+                <i class="fas fa-layer-group"></i> Projetos
             </button>
         </nav>
 
         <!-- MAIN CONTENT PANELS -->
         <main class="main-content">
             
-            <!-- PANEL: SOBRE / SKILLS -->
-            <div class="tab-pane active" id="sobre">
+            <!-- PANEL: PERFIL & COMPETÊNCIAS -->
+            <section class="tab-pane active" id="sobre" aria-labelledby="tab-sobre">
                 <div class="sobre-grid">
                     <div class="sobre-left">
-                        <div class="info-card objective">
-                            <h3><i class="fas fa-bullseye"></i> Objetivo</h3>
-                            <p>Atuar como Desenvolvedor Front-End Júnior, aplicando conhecimentos em HTML, CSS, JavaScript e React para criar interfaces responsivas e de alta performance. Busco evoluir continuamente e contribuir com soluções colaborativas e inovadoras no campo de tecnologia.</p>
-                        </div>
+                        <article class="info-card objective">
+                            <h3><i class="fas fa-bullseye"></i> Resumo Profissional</h3>
+                            <p>
+                                Engenheiro da Computação e pós-graduado em Banco de Dados, com 4 anos de experiência na Linx (Stone Co.) em sustentação N2 de sistemas ERP, análise de causa raiz (RCA) com SQL Server e validação de APIs REST via Postman. Promoção em 6 meses de Suporte Júnior para N2 Pleno, com histórico de 100% de SLA em chamados críticos e redução de 30% na reincidência de falhas operacionais. Vivência prática em homologação de correções com equipes de P&D, elaboração de mais de 10 runbooks técnicos e automação de testes com Robot Framework. Atuação direcionada para vagas de Analista de Sistemas Júnior, Analista de QA Júnior e Analista de Banco de Dados Júnior.
+                            </p>
+                        </article>
                         
-                        <div class="info-card contact">
-                            <h3><i class="fas fa-address-card"></i> Contato</h3>
+                        <article class="info-card contact">
+                            <h3><i class="fas fa-address-card"></i> Contato Oficial</h3>
                             <div class="contact-item">
                                 <i class="fas fa-envelope"></i>
-                                <a id="email" href="mailto:arc48388528@gmail.com">arc48388528@gmail.com</a>
+                                <a id="email" href="mailto:ailtonrocha0199@gmail.com">ailtonrocha0199@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <a href="tel:1195118692">(11) 95118-8692 (WhatsApp)</a>
                             </div>
                             <div class="contact-item">
                                 <i class="fab fa-linkedin"></i>
-                                <a id="linkedin-link" href="https://www.linkedin.com/in/ailton-rocha-b32206172/" target="_blank">linkedin.com/ailton-rocha</a>
+                                <a id="linkedin-link" href="https://www.linkedin.com/in/ailton-rocha-b32206172/" target="_blank" rel="noopener noreferrer">linkedin.com/in/ailton-rocha-b32206172</a>
                             </div>
                             <div class="contact-item">
                                 <i class="fab fa-github"></i>
-                                <a id="github-link" href="https://github.com/ailton019" target="_blank">github.com/ailton019</a>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-code-branch"></i>
-                                <a href="https://github.com/ailton019/ailton" target="_blank">github.com/ailton019/ailton</a>
+                                <a id="github-link" href="https://github.com/ailton019" target="_blank" rel="noopener noreferrer">github.com/ailton019</a>
                             </div>
                             <div class="contact-item">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <span>São Paulo, SP</span>
+                                <span>São Paulo, SP - Brasil</span>
                             </div>
-                        </div>
+                        </article>
                     </div>
 
                     <div class="sobre-right">
-                        <div class="info-card skills">
-                            <h3><i class="fas fa-code"></i> Hard Skills</h3>
-                            <div class="skill-item">
-                                <span>JavaScript (ES6+)</span>
-                                <div class="skill-bar"><div style="width: 80%"></div></div>
+                        <article class="info-card skills">
+                            <h3><i class="fas fa-code"></i> Competências Técnicas (Hard Skills)</h3>
+                            
+                            <div class="skill-group-block">
+                                <h4 class="skill-group-title"><i class="fas fa-database"></i> Banco de Dados & SQL</h4>
+                                <div class="skill-item">
+                                    <span>SQL Server (Queries complexas, JOINs, DML, DDL, integridade relacional)</span>
+                                    <div class="skill-bar"><div style="width: 90%"></div></div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Diagnóstico de Causa Raiz (RCA) & Análise de Volumetria</span>
+                                    <div class="skill-bar"><div style="width: 88%"></div></div>
+                                </div>
                             </div>
-                            <div class="skill-item">
-                                <span>HTML5 & CSS3</span>
-                                <div class="skill-bar"><div style="width: 85%"></div></div>
-                            </div>
-                            <div class="skill-item">
-                                <span>Git & GitHub</span>
-                                <div class="skill-bar"><div style="width: 75%"></div></div>
-                            </div>
-                            <div class="skill-item">
-                                <span>SQL Server</span>
-                                <div class="skill-bar"><div style="width: 70%"></div></div>
-                            </div>
-                            <div class="skill-item">
-                                <span>ERP / Integrações</span>
-                                <div class="skill-bar"><div style="width: 75%"></div></div>
-                            </div>
-                            <div class="skill-item">
-                                <span>Postman (API)</span>
-                                <div class="skill-bar"><div style="width: 80%"></div></div>
-                            </div>
-                        </div>
 
-                        <div class="info-card soft">
-                            <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                            <div class="skill-group-block">
+                                <h4 class="skill-group-title"><i class="fas fa-vial"></i> Qualidade, Testes (QA) & APIs</h4>
+                                <div class="skill-item">
+                                    <span>Validação de APIs REST com Postman & Homologação P&D</span>
+                                    <div class="skill-bar"><div style="width: 88%"></div></div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Testes Funcionais, Regressivos & Robot Framework</span>
+                                    <div class="skill-bar"><div style="width: 80%"></div></div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Git & GitHub (Versionamento e fluxo de entregas)</span>
+                                    <div class="skill-bar"><div style="width: 82%"></div></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-group-block">
+                                <h4 class="skill-group-title"><i class="fas fa-cubes"></i> Sistemas ERP & Sustentação N2</h4>
+                                <div class="skill-item">
+                                    <span>ERP Microvix & TOTVS (Faturamento, Fiscal, Estoque)</span>
+                                    <div class="skill-bar"><div style="width: 92%"></div></div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Elaboração de Runbooks Técnicos (10+ documentos estruturados)</span>
+                                    <div class="skill-bar"><div style="width: 90%"></div></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="info-card soft">
+                            <h3><i class="fas fa-users"></i> Atuação e Diferenciais Comportamentais</h3>
                             <ul>
-                                <li><i class="fas fa-check-circle"></i> Liderança e gestão</li>
-                                <li><i class="fas fa-check-circle"></i> Comunicação clara</li>
-                                <li><i class="fas fa-check-circle"></i> Solução de problemas</li>
-                                <li><i class="fas fa-check-circle"></i> Trabalho em equipe</li>
-                                <li><i class="fas fa-check-circle"></i> Documentação técnica</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Foco em Resolução de Problemas:</strong> Investigação profunda para erradicação de bugs recorrentes.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Orientação a Resultados & SLA:</strong> Histórico comprovado de 100% de SLA em chamados críticos N2.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Comunicação e Parceria P&D:</strong> Ponte eficiente entre suporte, regras de negócio e engenharia.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Liderança e Padronização:</strong> Disseminação ativa de boas práticas e runbooks para a equipe.</li>
                             </ul>
-                        </div>
+                        </article>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- PANEL: EXPERIÊNCIA -->
-            <div class="tab-pane" id="experiencia">
-                <div class="info-card experience-panel">
+            <!-- PANEL: EXPERIÊNCIA COM TIMELINE -->
+            <section class="tab-pane" id="experiencia" aria-labelledby="tab-experiencia">
+                <article class="info-card experience-panel">
                     <h3><i class="fas fa-briefcase"></i> Experiência Profissional</h3>
-                    
-                    <div class="exp-item">
-                        <div class="exp-header">
-                            <h4>Analista de Sustentação N2 / ERP - Integrações</h4>
-                            <span class="date">2022 - Atual</span>
+                    <p class="panel-subtitle">Trajetória sólida com resultados comprovados em suporte crítico, análise de causa raiz e liderança.</p>
+
+                    <div class="timeline">
+                        <!-- Item 1: Linx N2 Pleno -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="exp-header">
+                                    <h4>Analista de Sustentação N2 (Pleno)</h4>
+                                    <span class="date">2022 – Atual</span>
+                                </div>
+                                <p class="company"><i class="fas fa-building"></i> Linx (Stone Co.) <span class="badge-progression">Promovido em 6 meses</span></p>
+                                <ul>
+                                    <li>Atendimento e sustentação N2 a incidentes críticos de ERP (Microvix/TOTVS), com média de 200 chamados/mês e índice de <strong>100% de SLA alcançado</strong>.</li>
+                                    <li>Execução de RCA (Root Cause Analysis) com consultas avançadas em SQL Server e leitura de código-fonte, <strong>reduzindo em até 30% a reincidência de problemas operacionais</strong>.</li>
+                                    <li>Validação técnica de integrações e APIs REST via Postman, homologando correções de bugs diretamente com equipes de P&D em ambientes de homologação e produção.</li>
+                                    <li>Elaboração e manutenção de <strong>mais de 10 runbooks técnicos</strong> para padronização de rotinas, nivelamento da equipe e suporte de alto desempenho.</li>
+                                </ul>
+                            </div>
                         </div>
-                        <p class="company">Linx (Stone Co.)</p>
-                        <ul>
-                            <li>Leitura/análise de código e consultas SQL para identificação de causa raiz (RCA).</li>
-                            <li>Correção de bugs em parceria direta com P&D/Desenvolvimento (produção e homologação).</li>
-                            <li>Validação de requisições via Postman e análise de integrações.</li>
-                            <li>Documentação de runbooks e disseminação de conhecimento técnico.</li>
-                        </ul>
+
+                        <!-- Item 2: Linx N1/Suporte Jr -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="exp-header">
+                                    <h4>Analista de Suporte Júnior</h4>
+                                    <span class="date">2022 (Promoção em 6 meses)</span>
+                                </div>
+                                <p class="company"><i class="fas fa-building"></i> Linx (Stone Co.)</p>
+                                <ul>
+                                    <li>Suporte técnico a clientes do ERP Microvix em rotinas de faturamento, regras fiscais e controle de estoque, com média de <strong>472 chamados/mês e 98% de SLA atingido</strong>.</li>
+                                    <li>Triagem qualificada de incidentes e diagnóstico preliminar de divergências em bases relacionais SQL Server.</li>
+                                    <li>Reconhecimento técnico e <strong>promoção acelerada para Sustentação N2 Pleno em apenas 6 meses</strong> de atuação.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Item 3: City Distribuidora -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="exp-header">
+                                    <h4>Gerente Geral</h4>
+                                    <span class="date">2020 – 2022</span>
+                                </div>
+                                <p class="company"><i class="fas fa-building"></i> City Distribuidora de Bebidas</p>
+                                <ul>
+                                    <li>Liderança direta de equipe com 5 colaboradores, gestão de custos operacionais e controle rigoroso de estoque.</li>
+                                    <li><strong>Premiado e reconhecido como gerente com menor índice de perdas de estoque (produtos vencidos)</strong> e destaque contínuo em metas de vendas.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- PANEL: FORMAÇÃO E CERTIFICAÇÕES -->
+            <section class="tab-pane" id="formacoes" aria-labelledby="tab-formacoes">
+                <article class="info-card education-panel">
+                    <h3><i class="fas fa-graduation-cap"></i> Formação Acadêmica & Certificações</h3>
+                    <p class="panel-subtitle">Base sólida em Engenharia e Especialização em Banco de Dados, combinada com certificações práticas de mercado.</p>
+                    
+                    <!-- Formação Acadêmica -->
+                    <div class="academic-grid">
+                        <div class="academic-card highlight">
+                            <div class="academic-icon"><i class="fas fa-database"></i></div>
+                            <div class="academic-info">
+                                <span class="academic-tag">Pós-Graduação Lato Sensu</span>
+                                <h4>Pós-graduação em Banco de Dados</h4>
+                                <p class="academic-institution"><i class="fas fa-university"></i> Faculdade Líbano</p>
+                                <span class="academic-date"><i class="fas fa-calendar-check"></i> Concluída em 2026</span>
+                                <p class="academic-desc">Especialização voltada a modelagem relacional, estratégias de indexação, consultas complexas e integridade transacional de dados.</p>
+                            </div>
+                        </div>
+
+                        <div class="academic-card">
+                            <div class="academic-icon"><i class="fas fa-microchip"></i></div>
+                            <div class="academic-info">
+                                <span class="academic-tag">Graduação / Bacharelado</span>
+                                <h4>Bacharelado em Engenharia da Computação</h4>
+                                <p class="academic-institution"><i class="fas fa-university"></i> FAM – Centro Universitário das Américas</p>
+                                <span class="academic-date"><i class="fas fa-calendar-alt"></i> 2018 – 2023</span>
+                                <p class="academic-desc">Formação completa em arquitetura de software, lógica de programação, estruturas de dados, redes e engenharia de software.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="exp-item">
-                        <div class="exp-header">
-                            <h4>Gerente Geral</h4>
-                            <span class="date">2020 - 2022</span>
+                    <!-- Idiomas -->
+                    <div class="languages-box">
+                        <h4><i class="fas fa-language"></i> Idiomas</h4>
+                        <div class="languages-list">
+                            <div class="lang-pill">
+                                <strong>Português:</strong> <span>Nativo</span>
+                            </div>
+                            <div class="lang-pill">
+                                <strong>Inglês:</strong> <span>Avançado (leitura técnica de documentação e análise de logs)</span>
+                            </div>
                         </div>
-                        <p class="company">City Distribuidora de Bebidas</p>
-                        <ul>
-                            <li>Liderança de equipe e implementação de estratégias comerciais.</li>
-                            <li>Gestão de estoque, custos e treinamento de colaboradores.</li>
-                        </ul>
                     </div>
-                </div>
-            </div>
 
-            <!-- PANEL: FORMAÇÕES (SHIELD BADGES) -->
-            <div class="tab-pane" id="formacoes">
-                <div class="info-card education-panel">
-                    <h3><i class="fas fa-shield-alt"></i> Formações e Certificações</h3>
-                    <p class="panel-subtitle">Minhas credenciais acadêmicas e técnicas representadas como escudos de conquista. Clique em um escudo para visualizar o comprovante.</p>
-                    
+                    <!-- Certificações Profissionais -->
+                    <div class="certs-section-header">
+                        <h4><i class="fas fa-award"></i> Certificações Técnicas</h4>
+                        <p>Exibindo certificações prioritárias para banco de dados, testes automatizados e sistemas ERP:</p>
+                    </div>
+
                     <!-- Filtros e Busca de Certificados -->
                     <div class="cert-controls">
                         <div class="filter-group">
-                            <button class="filter-btn active" data-filter="all">Todos</button>
+                            <button class="filter-btn active" data-filter="all">Todas as Áreas</button>
                             <button class="filter-btn" data-filter="core">Principais</button>
                             <button class="filter-btn" data-filter="tech">Tecnologia</button>
                             <button class="filter-btn" data-filter="linx">Linx Academy</button>
-                            <button class="filter-btn" data-filter="totvs">TOTVS / Seg</button>
+                            <button class="filter-btn" data-filter="totvs">TOTVS / Segurança</button>
                         </div>
                         <div class="search-group">
-                            <i class="fas fa-search"></i>
-                            <input type="text" id="certSearch" placeholder="Buscar certificado pelo nome...">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                            <input type="text" id="certSearch" placeholder="Buscar certificação por tecnologia ou nome..." aria-label="Buscar certificação">
                         </div>
                     </div>
 
                     <div class="shields-grid" id="shieldsGrid">
-                        <!-- Os escudos serão gerados dinamicamente via JS -->
+                        <!-- Gerado dinamicamente via certificados.js -->
                     </div>
-                </div>
-            </div>
+                </article>
+            </section>
 
-            <!-- PANEL: PROJETOS (TROPHY/CONQUISTAS) -->
-            <div class="tab-pane" id="projetos">
-                <div class="info-card projects-panel">
-                    <h3><i class="fas fa-trophy"></i> Conquistas Desenvolvidas</h3>
-                    <p class="panel-subtitle">Meus projetos representados como troféus de conquista. Projetos de ouro representam os destaques principais.</p>
+            <!-- PANEL: PROJETOS -->
+            <section class="tab-pane" id="projetos" aria-labelledby="tab-projetos">
+                <article class="info-card projects-panel">
+                    <h3><i class="fas fa-layer-group"></i> Projetos em Destaque</h3>
+                    <p class="panel-subtitle">Aplicações práticas com foco em regras de sistemas ERP, controle operacional e persistência de dados.</p>
                     
-                    <div class="trophies-grid">
+                    <div class="projects-grid">
                         
-                        <!-- 1. Explorando Conhecimento (GOLD) -->
-                        <div class="trophy-card gold-tier">
-                            <div class="trophy-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M19 5h-2V3H7v2H5C3.34 5 2 6.34 2 8c0 2.21 1.5 4.07 3.5 4.78.78 1.25 2.12 2.11 3.5 2.22V17H7v2h10v-2h-4v-2c1.38-.11 2.72-.97 3.5-2.22 2-.71 3.5-2.57 3.5-4.78 0-1.66-1.34-3-3-3zM5 10c-.55 0-1-.45-1-1s.45-1 1-1h2v2H5zm14-1c0 .55-.45 1-1 1h-2V8h2c.55 0 1 .45 1 1z"/>
-                                </svg>
-                                <span class="tier-tag">OURO</span>
+                        <!-- 1. ERP Microvix – Rotinas -->
+                        <div class="project-card highlight-card">
+                            <div class="project-card-header">
+                                <span class="project-tag highlight"><i class="fas fa-cubes"></i> ERP / Sustentação</span>
+                                <span class="project-badge-real">Vivência Prática Real</span>
                             </div>
-                            <div class="trophy-details">
-                                <span class="achievement-title">🏆 CONQUISTA DESTAQUE</span>
-                                <h4>Explorando Conhecimento</h4>
-                                <p>Plataforma de aprendizado completa com design em vidro fosco. Inclui módulos sobre HTML, CSS, JavaScript, Python, SQL, Git, GitHub, IA, VS Code e ferramentas do Google.</p>
-                                <a href="https://ailton019.github.io/explorando_conhecimento/" target="_blank" class="trophy-link">Visualizar Projeto <i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-
-                        <!-- 2. Original Eletrônico (GOLD) -->
-                        <div class="trophy-card gold-tier">
-                            <div class="trophy-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M19 5h-2V3H7v2H5C3.34 5 2 6.34 2 8c0 2.21 1.5 4.07 3.5 4.78.78 1.25 2.12 2.11 3.5 2.22V17H7v2h10v-2h-4v-2c1.38-.11 2.72-.97 3.5-2.22 2-.71 3.5-2.57 3.5-4.78 0-1.66-1.34-3-3-3zM5 10c-.55 0-1-.45-1-1s.45-1 1-1h2v2H5zm14-1c0 .55-.45 1-1 1h-2V8h2c.55 0 1 .45 1 1z"/>
-                                </svg>
-                                <span class="tier-tag">OURO</span>
-                            </div>
-                            <div class="trophy-details">
-                                <span class="achievement-title">🏆 CONQUISTA DESTAQUE</span>
-                                <h4>Original Eletrônico</h4>
-                                <p>Interface de alta segurança e design responsivo para controle, assinatura eletrônica e validação de autenticidade de documentos digitais.</p>
-                                <a href="https://ailton019.github.io/original-eletronico/" target="_blank" class="trophy-link">Visualizar Projeto <i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-
-                        <!-- 3. Clinicalle (GOLD) -->
-                        <div class="trophy-card gold-tier">
-                            <div class="trophy-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M19 5h-2V3H7v2H5C3.34 5 2 6.34 2 8c0 2.21 1.5 4.07 3.5 4.78.78 1.25 2.12 2.11 3.5 2.22V17H7v2h10v-2h-4v-2c1.38-.11 2.72-.97 3.5-2.22 2-.71 3.5-2.57 3.5-4.78 0-1.66-1.34-3-3-3zM5 10c-.55 0-1-.45-1-1s.45-1 1-1h2v2H5zm14-1c0 .55-.45 1-1 1h-2V8h2c.55 0 1 .45 1 1z"/>
-                                </svg>
-                                <span class="tier-tag">OURO</span>
-                            </div>
-                            <div class="trophy-details">
-                                <span class="achievement-title">🏆 CONQUISTA DESTAQUE</span>
-                                <h4>Clinicalle</h4>
-                                <p>Plataforma web refinada para clínicas médicas, apresentando especialidades, corpo clínico e agendamento de consultas intuitivo.</p>
-                                <a href="https://ailton019.github.io/clinicalle/" target="_blank" class="trophy-link">Visualizar Projeto <i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-
-                        <!-- 4. ERP Microvix (GOLD) -->
-                        <div class="trophy-card gold-tier">
-                            <div class="trophy-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M19 5h-2V3H7v2H5C3.34 5 2 6.34 2 8c0 2.21 1.5 4.07 3.5 4.78.78 1.25 2.12 2.11 3.5 2.22V17H7v2h10v-2h-4v-2c1.38-.11 2.72-.97 3.5-2.22 2-.71 3.5-2.57 3.5-4.78 0-1.66-1.34-3-3-3zM5 10c-.55 0-1-.45-1-1s.45-1 1-1h2v2H5zm14-1c0 .55-.45 1-1 1h-2V8h2c.55 0 1 .45 1 1z"/>
-                                </svg>
-                                <span class="tier-tag">OURO</span>
-                            </div>
-                            <div class="trophy-details">
-                                <span class="achievement-title">🏆 CONQUISTA DESTAQUE</span>
+                            <div class="project-card-body">
                                 <h4>ERP Microvix – Rotinas</h4>
-                                <p>Manual e facilitador online para processos críticos do ERP Microvix, organizando consultas rápidas e resumos de rotinas.</p>
-                                <a href="https://ailton019.github.io/r99/" target="_blank" class="trophy-link">Visualizar Projeto <i class="fas fa-external-link-alt"></i></a>
+                                <p class="project-problem">
+                                    Centraliza rotinas críticas, consultas rápidas e documentação de processos operacionais do ERP Microvix para agilizar atendimentos N2 e mitigar erros operacionais frequentes em ambientes de produção.
+                                </p>
+                                <div class="project-stack">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                    <span>Docs Técnicos</span>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://ailton019.github.io/r99/" target="_blank" rel="noopener noreferrer" class="project-link primary">
+                                    <i class="fas fa-external-link-alt"></i> Acessar Demo
+                                </a>
+                                <a href="https://github.com/ailton019/r99" target="_blank" rel="noopener noreferrer" class="project-link secondary">
+                                    <i class="fab fa-github"></i> Ver Código
+                                </a>
                             </div>
                         </div>
 
-                        <!-- OTHER TROPHIES (SILVER) -->
-                        
-                        <!-- MaStore -->
-                        <div class="trophy-card silver-tier">
-                            <div class="trophy-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M19 5h-2V3H7v2H5C3.34 5 2 6.34 2 8c0 2.21 1.5 4.07 3.5 4.78.78 1.25 2.12 2.11 3.5 2.22V17H7v2h10v-2h-4v-2c1.38-.11 2.72-.97 3.5-2.22 2-.71 3.5-2.57 3.5-4.78 0-1.66-1.34-3-3-3zM5 10c-.55 0-1-.45-1-1s.45-1 1-1h2v2H5zm14-1c0 .55-.45 1-1 1h-2V8h2c.55 0 1 .45 1 1z"/>
-                                </svg>
+                        <!-- 2. Controle Financeiro -->
+                        <div class="project-card">
+                            <div class="project-card-header">
+                                <span class="project-tag"><i class="fas fa-chart-line"></i> Gestão Financeira</span>
                             </div>
-                            <div class="trophy-details">
-                                <h4>MaStore - Vendas</h4>
-                                <p>Catálogo digital de e-commerce responsivo com interface limpa e carrinho interativo.</p>
-                                <a href="https://ailton019.github.io/mastore/" target="_blank" class="trophy-link">Acessar →</a>
-                            </div>
-                        </div>
-
-                        <!-- Lava Rápido -->
-                        <div class="trophy-card silver-tier">
-                            <div class="trophy-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M19 5h-2V3H7v2H5C3.34 5 2 6.34 2 8c0 2.21 1.5 4.07 3.5 4.78.78 1.25 2.12 2.11 3.5 2.22V17H7v2h10v-2h-4v-2c1.38-.11 2.72-.97 3.5-2.22 2-.71 3.5-2.57 3.5-4.78 0-1.66-1.34-3-3-3zM5 10c-.55 0-1-.45-1-1s.45-1 1-1h2v2H5zm14-1c0 .55-.45 1-1 1h-2V8h2c.55 0 1 .45 1 1z"/>
-                                </svg>
-                            </div>
-                            <div class="trophy-details">
-                                <h4>Lava Rápido</h4>
-                                <p>Página promocional de estética automotiva com solicitação de leva e traz.</p>
-                                <a href="https://ailton019.github.io/lavarapido/" target="_blank" class="trophy-link">Acessar →</a>
-                            </div>
-                        </div>
-
-                        <!-- Campo Minado -->
-                        <div class="trophy-card silver-tier">
-                            <div class="trophy-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M19 5h-2V3H7v2H5C3.34 5 2 6.34 2 8c0 2.21 1.5 4.07 3.5 4.78.78 1.25 2.12 2.11 3.5 2.22V17H7v2h10v-2h-4v-2c1.38-.11 2.72-.97 3.5-2.22 2-.71 3.5-2.57 3.5-4.78 0-1.66-1.34-3-3-3zM5 10c-.55 0-1-.45-1-1s.45-1 1-1h2v2H5zm14-1c0 .55-.45 1-1 1h-2V8h2c.55 0 1 .45 1 1z"/>
-                                </svg>
-                            </div>
-                            <div class="trophy-details">
-                                <h4>Campo Minado</h4>
-                                <p>O clássico jogo do Windows desenvolvido em JavaScript puro com renderização dinâmica.</p>
-                                <a href="https://ailton019.github.io/gamecampominado/" target="_blank" class="trophy-link">Acessar →</a>
-                            </div>
-                        </div>
-
-                        <!-- Checklist -->
-                        <div class="trophy-card silver-tier">
-                            <div class="trophy-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M19 5h-2V3H7v2H5C3.34 5 2 6.34 2 8c0 2.21 1.5 4.07 3.5 4.78.78 1.25 2.12 2.11 3.5 2.22V17H7v2h10v-2h-4v-2c1.38-.11 2.72-.97 3.5-2.22 2-.71 3.5-2.57 3.5-4.78 0-1.66-1.34-3-3-3zM5 10c-.55 0-1-.45-1-1s.45-1 1-1h2v2H5zm14-1c0 .55-.45 1-1 1h-2V8h2c.55 0 1 .45 1 1z"/>
-                                </svg>
-                            </div>
-                            <div class="trophy-details">
-                                <h4>Checklist Interativo</h4>
-                                <p>Gerenciador de tarefas pessoal com persistência e estatísticas de conclusão.</p>
-                                <a href="https://ailton019.github.io/Checklist/" target="_blank" class="trophy-link">Acessar →</a>
-                            </div>
-                        </div>
-
-                        <!-- Controle Financeiro -->
-                        <div class="trophy-card silver-tier">
-                            <div class="trophy-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M19 5h-2V3H7v2H5C3.34 5 2 6.34 2 8c0 2.21 1.5 4.07 3.5 4.78.78 1.25 2.12 2.11 3.5 2.22V17H7v2h10v-2h-4v-2c1.38-.11 2.72-.97 3.5-2.22 2-.71 3.5-2.57 3.5-4.78 0-1.66-1.34-3-3-3zM5 10c-.55 0-1-.45-1-1s.45-1 1-1h2v2H5zm14-1c0 .55-.45 1-1 1h-2V8h2c.55 0 1 .45 1 1z"/>
-                                </svg>
-                            </div>
-                            <div class="trophy-details">
+                            <div class="project-card-body">
                                 <h4>Controle Financeiro</h4>
-                                <p>Painel financeiro para controle de transações, despesas e receitas.</p>
-                                <a href="https://ailton019.github.io/controle_financ/" target="_blank" class="trophy-link">Acessar →</a>
+                                <p class="project-problem">
+                                    Gerenciamento e acompanhamento visual de entradas, despesas e fluxo de caixa com persistência local em navegador e relatórios instantâneos de saldo.
+                                </p>
+                                <div class="project-stack">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                    <span>LocalStorage</span>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://ailton019.github.io/controle_financ/" target="_blank" rel="noopener noreferrer" class="project-link primary">
+                                    <i class="fas fa-external-link-alt"></i> Acessar Demo
+                                </a>
+                                <a href="https://github.com/ailton019/controle_financ" target="_blank" rel="noopener noreferrer" class="project-link secondary">
+                                    <i class="fab fa-github"></i> Ver Código
+                                </a>
                             </div>
                         </div>
 
-                        <!-- Rede Social -->
-                        <div class="trophy-card silver-tier">
-                            <div class="trophy-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M19 5h-2V3H7v2H5C3.34 5 2 6.34 2 8c0 2.21 1.5 4.07 3.5 4.78.78 1.25 2.12 2.11 3.5 2.22V17H7v2h10v-2h-4v-2c1.38-.11 2.72-.97 3.5-2.22 2-.71 3.5-2.57 3.5-4.78 0-1.66-1.34-3-3-3zM5 10c-.55 0-1-.45-1-1s.45-1 1-1h2v2H5zm14-1c0 .55-.45 1-1 1h-2V8h2c.55 0 1 .45 1 1z"/>
-                                </svg>
+                        <!-- 3. Checklist Interativo -->
+                        <div class="project-card">
+                            <div class="project-card-header">
+                                <span class="project-tag"><i class="fas fa-tasks"></i> Produtividade</span>
                             </div>
-                            <div class="trophy-details">
-                                <h4>Rede Social (Mockup)</h4>
-                                <p>Simulador de interface de feed, interações e perfil social responsivo.</p>
-                                <a href="https://ailton019.github.io/rede-social/" target="_blank" class="trophy-link">Acessar →</a>
+                            <div class="project-card-body">
+                                <h4>Checklist Interativo (com persistência)</h4>
+                                <p class="project-problem">
+                                    Organização e rastreamento de tarefas e rotinas operacionais com armazenamento persistente em LocalStorage e métricas visuais de progresso.
+                                </p>
+                                <div class="project-stack">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                    <span>LocalStorage</span>
+                                </div>
                             </div>
-                        </div>
-
-                        <!-- Drag & Drop -->
-                        <div class="trophy-card silver-tier">
-                            <div class="trophy-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M19 5h-2V3H7v2H5C3.34 5 2 6.34 2 8c0 2.21 1.5 4.07 3.5 4.78.78 1.25 2.12 2.11 3.5 2.22V17H7v2h10v-2h-4v-2c1.38-.11 2.72-.97 3.5-2.22 2-.71 3.5-2.57 3.5-4.78 0-1.66-1.34-3-3-3zM5 10c-.55 0-1-.45-1-1s.45-1 1-1h2v2H5zm14-1c0 .55-.45 1-1 1h-2V8h2c.55 0 1 .45 1 1z"/>
-                                </svg>
-                            </div>
-                            <div class="trophy-details">
-                                <h4>CS Drag & Drop Editor</h4>
-                                <p>Editor visual interativo que suporta movimentação dinâmica de elementos.</p>
-                                <a href="https://ailton019.github.io/cs-drag-dvEd/" target="_blank" class="trophy-link">Acessar →</a>
-                            </div>
-                        </div>
-
-                        <!-- Menu Interativo -->
-                        <div class="trophy-card silver-tier">
-                            <div class="trophy-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M19 5h-2V3H7v2H5C3.34 5 2 6.34 2 8c0 2.21 1.5 4.07 3.5 4.78.78 1.25 2.12 2.11 3.5 2.22V17H7v2h10v-2h-4v-2c1.38-.11 2.72-.97 3.5-2.22 2-.71 3.5-2.57 3.5-4.78 0-1.66-1.34-3-3-3zM5 10c-.55 0-1-.45-1-1s.45-1 1-1h2v2H5zm14-1c0 .55-.45 1-1 1h-2V8h2c.55 0 1 .45 1 1z"/>
-                                </svg>
-                            </div>
-                            <div class="trophy-details">
-                                <h4>Menu Interativo</h4>
-                                <p>Navegações dinâmicas de interface web focadas em micro-interações elegantes.</p>
-                                <a href="https://ailton019.github.io/interativo/menu_interativo/" target="_blank" class="trophy-link">Acessar →</a>
+                            <div class="project-actions">
+                                <a href="https://ailton019.github.io/Checklist/" target="_blank" rel="noopener noreferrer" class="project-link primary">
+                                    <i class="fas fa-external-link-alt"></i> Acessar Demo
+                                </a>
+                                <a href="https://github.com/ailton019/Checklist" target="_blank" rel="noopener noreferrer" class="project-link secondary">
+                                    <i class="fab fa-github"></i> Ver Código
+                                </a>
                             </div>
                         </div>
 
-                        <!-- Cordel Moderno -->
-                        <div class="trophy-card silver-tier">
-                            <div class="trophy-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M19 5h-2V3H7v2H5C3.34 5 2 6.34 2 8c0 2.21 1.5 4.07 3.5 4.78.78 1.25 2.12 2.11 3.5 2.22V17H7v2h10v-2h-4v-2c1.38-.11 2.72-.97 3.5-2.22 2-.71 3.5-2.57 3.5-4.78 0-1.66-1.34-3-3-3zM5 10c-.55 0-1-.45-1-1s.45-1 1-1h2v2H5zm14-1c0 .55-.45 1-1 1h-2V8h2c.55 0 1 .45 1 1z"/>
-                                </svg>
-                            </div>
-                            <div class="trophy-details">
-                                <h4>Cordel Moderno</h4>
-                                <p>Página poética estruturada com efeito Parallax de imagens de fundo em CSS.</p>
-                                <a href="https://ailton019.github.io/cordel_moderno/" target="_blank" class="trophy-link">Acessar →</a>
-                            </div>
-                        </div>
-
-                        <!-- Página Android -->
-                        <div class="trophy-card silver-tier">
-                            <div class="trophy-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M19 5h-2V3H7v2H5C3.34 5 2 6.34 2 8c0 2.21 1.5 4.07 3.5 4.78.78 1.25 2.12 2.11 3.5 2.22V17H7v2h10v-2h-4v-2c1.38-.11 2.72-.97 3.5-2.22 2-.71 3.5-2.57 3.5-4.78 0-1.66-1.34-3-3-3zM5 10c-.55 0-1-.45-1-1s.45-1 1-1h2v2H5zm14-1c0 .55-.45 1-1 1h-2V8h2c.55 0 1 .45 1 1z"/>
-                                </svg>
-                            </div>
-                            <div class="trophy-details">
-                                <h4>Página Android</h4>
-                                <p>Informativo e curiosidades sobre o robozinho mais famoso dos sistemas móveis.</p>
-                                <a href="https://ailton019.github.io/minha_pagina_android/" target="_blank" class="trophy-link">Acessar →</a>
-                            </div>
-                        </div>
-
-                        <!-- Portfólio Anterior -->
-                        <div class="trophy-card silver-tier">
-                            <div class="trophy-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M19 5h-2V3H7v2H5C3.34 5 2 6.34 2 8c0 2.21 1.5 4.07 3.5 4.78.78 1.25 2.12 2.11 3.5 2.22V17H7v2h10v-2h-4v-2c1.38-.11 2.72-.97 3.5-2.22 2-.71 3.5-2.57 3.5-4.78 0-1.66-1.34-3-3-3zM5 10c-.55 0-1-.45-1-1s.45-1 1-1h2v2H5zm14-1c0 .55-.45 1-1 1h-2V8h2c.55 0 1 .45 1 1z"/>
-                                </svg>
-                            </div>
-                            <div class="trophy-details">
-                                <h4>Portfólio Anterior</h4>
-                                <p>Uma antiga versão do meu repositório e histórico profissional de desenvolvimento.</p>
-                                <a href="https://ailton019.github.io/portifolio.n/" target="_blank" class="trophy-link">Acessar →</a>
-                            </div>
-                        </div>
                     </div>
-                </div>
-            </div>
+
+                    <!-- Link discreto para o GitHub com todos os repositórios -->
+                    <div class="projects-footer">
+                        <a href="https://github.com/ailton019?tab=repositories" target="_blank" rel="noopener noreferrer" class="view-all-github-link">
+                            <i class="fab fa-github"></i> Ver todos os projetos no GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </section>
 
         </main>
-    </div>
 
-    <!-- Modal para edição (kept for compatibility) -->
-    <div id="editModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h3>Editar</h3>
-            <input type="text" id="editInput" placeholder="Novo valor">
-            <button id="saveEdit">Salvar</button>
-        </div>
+        <!-- RODAPÉ SÓBRIO E PROFISSIONAL -->
+        <footer>
+            <p><strong>Ailton Rocha Cordeiro</strong> &bull; Analista de Sistemas Júnior | Banco de Dados (SQL) | QA e Testes</p>
+            <p class="footer-links">
+                <a href="https://www.linkedin.com/in/ailton-rocha-b32206172/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a> &bull;
+                <a href="https://github.com/ailton019" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a> &bull;
+                <span>São Paulo, SP</span>
+            </p>
+        </footer>
     </div>
 
     <!-- Modal de Visualização de Certificado -->
-    <div id="certModal" class="modal">
-        <div class="modal-content" style="max-width: 800px; width: 90%; padding: 1.5rem; text-align: center; position: relative;">
-            <span class="close" id="closeCertModal" style="position: absolute; right: 20px; top: 15px; font-size: 2rem;">&times;</span>
-            <h3 id="certModalTitle" style="margin-bottom: 1.5rem; font-family: 'Outfit', sans-serif; font-size: 1.25rem;">Visualizar Certificado</h3>
-            <div style="width: 100%; max-height: 70vh; overflow-y: auto; display: flex; justify-content: center; align-items: center; border-radius: 12px; background: rgba(0,0,0,0.25); padding: 10px; border: 1px solid rgba(255,255,255,0.05);">
-                <img id="certModalImg" src="" alt="Certificado" style="max-width: 100%; max-height: 65vh; object-fit: contain; border-radius: 8px;">
+    <div id="certModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+        <div class="modal-content cert-modal-box">
+            <span class="close" id="closeCertModal" aria-label="Fechar modal">&times;</span>
+            <h3 id="certModalTitle">Visualizar Certificado</h3>
+            <div class="cert-modal-viewport">
+                <img id="certModalImg" src="" alt="Certificado em tamanho original">
             </div>
         </div>
     </div>
 
-    <!-- Modal para Opções de Download do Currículo -->
-    <div id="cvModal" class="modal">
-        <div class="cv-modal-content">
-            <span class="close close-cv-modal" style="position: absolute; right: 20px; top: 18px; font-size: 2rem; cursor: pointer; color: #94a3b8;">&times;</span>
-            <div class="cv-modal-header">
-                <h3><i class="fas fa-file-pdf"></i> Baixar Currículo Profissional</h3>
-                <p>Selecione o direcionamento do currículo em PDF. O documento é gerado em tempo real com padrão executivo A4 pronto para análise de recrutadores e sistemas ATS.</p>
-            </div>
-
-            <div class="cv-options-list">
-                <!-- Opção 1: Completo / Geral (Recomendado) -->
-                <button type="button" class="cv-option-card primary" data-cv-focus="geral">
-                    <div class="cv-option-info">
-                        <h4>
-                            <i class="fas fa-layer-group"></i> Perfil Multidisciplinar
-                            <span class="cv-badge-recommended">Recomendado</span>
-                        </h4>
-                        <p>Visão integrada: Desenvolvedor Jr, QA / Automação e Banco de Dados / Sustentação N2.</p>
-                    </div>
-                    <div class="cv-option-icon">
-                        <i class="fas fa-download"></i>
-                    </div>
-                </button>
-
-                <!-- Opção 2: Foco Desenvolvedor Júnior -->
-                <button type="button" class="cv-option-card" data-cv-focus="dev">
-                    <div class="cv-option-info">
-                        <h4><i class="fas fa-code"></i> Foco: Desenvolvedor Júnior</h4>
-                        <p>Ênfase em JavaScript, React, HTML5/CSS3, C# (.NET), APIs REST e lógica de software.</p>
-                    </div>
-                    <div class="cv-option-icon">
-                        <i class="fas fa-download"></i>
-                    </div>
-                </button>
-
-                <!-- Opção 3: Foco QA / Automação -->
-                <button type="button" class="cv-option-card" data-cv-focus="qa">
-                    <div class="cv-option-info">
-                        <h4><i class="fas fa-robot"></i> Foco: QA / Testes & Automação</h4>
-                        <p>Ênfase em Robot Framework, testes de API (Postman), análise de causa raiz (RCA) e homologação.</p>
-                    </div>
-                    <div class="cv-option-icon">
-                        <i class="fas fa-download"></i>
-                    </div>
-                </button>
-
-                <!-- Opção 4: Foco Banco de Dados / Sustentação -->
-                <button type="button" class="cv-option-card" data-cv-focus="database">
-                    <div class="cv-option-info">
-                        <h4><i class="fas fa-database"></i> Foco: Banco de Dados / Sustentação N2</h4>
-                        <p>Ênfase em SQL Server, queries complexas, suporte crítico a ERPs (Microvix/TOTVS) e integridade de dados.</p>
-                    </div>
-                    <div class="cv-option-icon">
-                        <i class="fas fa-download"></i>
-                    </div>
-                </button>
-            </div>
-
-            <div class="cv-modal-footer">
-                <span>Arquivo gerado: <strong>curriculo.pdf</strong></span>
-                <button type="button" onclick="window.baixarCurriculoPdf('geral')"><i class="fas fa-bolt"></i> Download Direto</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- TAB NAVIGATOR AND PORTFOLIO SCRIPT -->
+    <!-- SCRIPTS -->
+    <script src="data/curriculo.js?v=20261017"></script>
+    <script src="src/js/jspdf.umd.min.js?v=20261017"></script>
+    <script src="src/js/certificados.js?v=20261017"></script>
+    <script src="src/js/curriculo-generator.js?v=20261017"></script>
+    <script src="src/js/script.js?v=20261017"></script>
+    
+    <!-- Tab navigation logic inline -->
     <script>
-        // Simple and smooth tab navigation logic
         document.querySelectorAll('.tab-btn').forEach(btn => {
             btn.addEventListener('click', () => {
-                // Remove active classes
                 document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
                 document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
-
-                // Add active to current button
                 btn.classList.add('active');
-
-                // Add active to corresponding pane
                 const tabId = btn.getAttribute('data-tab');
                 const pane = document.getElementById(tabId);
-                pane.classList.add('active');
-
-                // Trigger skill bars width animation again when profile tab is active
-                if (tabId === 'sobre') {
-                    animateSkills();
-                }
+                if (pane) pane.classList.add('active');
             });
-        });
-
-        // Trigger width animation on skills
-        function animateSkills() {
-            const skillBars = document.querySelectorAll('.skill-bar div');
-            skillBars.forEach(bar => {
-                const width = bar.getAttribute('style') || bar.style.width;
-                bar.style.width = '0%';
-                setTimeout(() => {
-                    bar.style.width = width.replace('width: ', '');
-                }, 100);
-            });
-        }
-        
-        // Run on load
-        window.addEventListener('DOMContentLoaded', () => {
-            animateSkills();
         });
     </script>
-    <script src="src/js/html2pdf.bundle.min.js"></script>
-    <script src="src/js/certificados.js"></script>
-    <script src="src/js/curriculo-generator.js"></script>
-    <script src="src/js/script.js"></script>
 </body>
 </html>

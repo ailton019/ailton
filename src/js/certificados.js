@@ -1,15 +1,71 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Database of all 57 certificates
+    // 1. Base de dados de certificações técnicas
     const certificates = [
-        // Core / Principal Certificates (7 original ones)
+        // 5 Certificações Relevantes em Destaque
         {
-            title: "GRADUAÇÃO",
-            desc: "Engenharia da Computação",
-            ribbon: "2018 - 2023",
-            status: "Bacharel",
+            title: "BANCO DE DADOS",
+            desc: "SQL Server & Banco de Dados Relacional",
+            ribbon: "2025 - 2026",
+            status: "Especialização",
             category: "core",
+            destaque: true,
+            color: "teal",
+            icon: "fa-database",
+            image: null
+        },
+        {
+            title: "AUTOMAÇÃO / QA",
+            desc: "Automação de Testes com Robot Framework",
+            ribbon: "2025 - 2026",
+            status: "Certificado",
+            category: "core",
+            destaque: true,
+            color: "darkblue",
+            icon: "fa-robot",
+            image: null
+        },
+        {
+            title: "ERP & INTEGRAÇÕES",
+            desc: "Sustentação ERP Microvix & TOTVS",
+            ribbon: "2022 - Atual",
+            status: "Linx Academy",
+            category: "core",
+            destaque: true,
             color: "gold",
-            icon: "fa-university",
+            icon: "fa-cubes",
+            image: null
+        },
+        {
+            title: "CONTROLE DE VERSÃO",
+            desc: "Versionamento de Código com Git e GitHub",
+            ribbon: "2025 - 2026",
+            status: "Certificado",
+            category: "core",
+            destaque: true,
+            color: "purple",
+            icon: "fa-code-branch",
+            image: null
+        },
+        {
+            title: "APIS & INTEGRAÇÃO",
+            desc: "Validação de APIs REST com Postman",
+            ribbon: "2024 - 2025",
+            status: "Certificado",
+            category: "core",
+            destaque: true,
+            color: "blue",
+            icon: "fa-network-wired",
+            image: null
+        },
+        {
+            title: "BACKEND & C#",
+            desc: "Programação C# (.NET)",
+            ribbon: "2024 - 2025",
+            status: "Certificado",
+            category: "tech",
+            destaque: false,
+            color: "pink",
+            icon: "fa-microsoft",
             image: null
         },
         {
@@ -17,59 +73,10 @@ document.addEventListener('DOMContentLoaded', () => {
             desc: "Web Development (HTML/CSS/JS)",
             ribbon: "2024 - 2025",
             status: "Certificado",
-            category: "core",
+            category: "tech",
+            destaque: false,
             color: "blue",
             icon: "fa-code",
-            image: null
-        },
-        {
-            title: "DATABASE",
-            desc: "SQL Server / Banco de Dados",
-            ribbon: "2025",
-            status: "Certificado",
-            category: "core",
-            color: "teal",
-            icon: "fa-database",
-            image: null
-        },
-        {
-            title: "CONTROLE",
-            desc: "Git / GitHub Versioning",
-            ribbon: "2025 - 2026",
-            status: "Certificado",
-            category: "core",
-            color: "purple",
-            icon: "fa-code-branch",
-            image: null
-        },
-        {
-            title: "AUTOMAÇÃO",
-            desc: "Robot Framework (QA)",
-            ribbon: "2025 - 2026",
-            status: "Certificado",
-            category: "core",
-            color: "darkblue",
-            icon: "fa-robot",
-            image: null
-        },
-        {
-            title: "INFRA",
-            desc: "Redes de Computadores / Cisco",
-            ribbon: "2019 - 2020",
-            status: "Certificado",
-            category: "core",
-            color: "orange",
-            icon: "fa-network-wired",
-            image: null
-        },
-        {
-            title: "BACKEND",
-            desc: "Programação C# (.NET)",
-            ribbon: "2024 - 2025",
-            status: "Certificado",
-            category: "core",
-            color: "pink",
-            icon: "fa-microsoft",
             image: null
         },
 
@@ -655,55 +662,105 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentFilter = 'all';
     let searchQuery = '';
+    let mostrarTodos = false;
 
     // Render function
     function renderCertificates() {
+        if (!shieldsGrid) return;
         shieldsGrid.innerHTML = '';
+
+        // Se o usuário estiver buscando ou filtrando, ativa exibição completa
+        const emBuscaOuFiltro = searchQuery.trim() !== '' || currentFilter !== 'all';
+        const deveMostrarTodos = mostrarTodos || emBuscaOuFiltro;
         
-        const filteredCerts = certificates.filter(cert => {
+        let filteredCerts = certificates.filter(cert => {
             const matchesCategory = currentFilter === 'all' || cert.category === currentFilter;
             const matchesSearch = cert.desc.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                                 cert.title.toLowerCase().includes(searchQuery.toLowerCase());
+                                 cert.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                                 cert.status.toLowerCase().includes(searchQuery.toLowerCase());
             return matchesCategory && matchesSearch;
         });
 
+        // Por padrão sem filtro ativo e sem mostrarTodos, exibe apenas os 5 mais relevantes
+        if (!deveMostrarTodos) {
+            filteredCerts = filteredCerts.filter(c => c.destaque).slice(0, 5);
+        }
+
         if (filteredCerts.length === 0) {
             shieldsGrid.innerHTML = `
-                <div style="grid-column: 1/-1; text-align: center; padding: 3rem; color: var(--text-muted);">
-                    <i class="fas fa-search" style="font-size: 2.5rem; margin-bottom: 1rem;"></i>
-                    <p>Nenhum certificado encontrado para os critérios de busca.</p>
+                <div style="grid-column: 1/-1; text-align: center; padding: 2.5rem; color: var(--text-muted);">
+                    <i class="fas fa-search" style="font-size: 2rem; margin-bottom: 0.8rem; display: block; opacity: 0.6;"></i>
+                    <p>Nenhuma certificação encontrada para os critérios informados.</p>
                 </div>
             `;
             return;
         }
 
         filteredCerts.forEach(cert => {
-            const badge = document.createElement('div');
-            badge.className = `shield-badge color-${cert.color}`;
-            // Add click event only if there is an image associated
+            const card = document.createElement('div');
+            card.className = `cert-card ${cert.destaque ? 'cert-highlight' : ''}`;
+            
             if (cert.image) {
-                badge.style.cursor = 'pointer';
-                badge.title = "Clique para visualizar o certificado em tamanho real";
-                badge.addEventListener('click', () => openModal(cert));
-            } else {
-                badge.style.cursor = 'default';
+                card.style.cursor = 'pointer';
+                card.title = "Clique para visualizar o comprovante oficial";
+                card.addEventListener('click', () => openModal(cert));
             }
 
-            badge.innerHTML = `
-                <svg viewBox="0 0 140 180" class="shield-bg">
-                    <path d="M 5,5 H 135 V 150 L 70,175 L 5,150 Z" />
-                </svg>
-                <div class="shield-content">
-                    <div class="shield-icon"><i class="${cert.icon ? 'fas ' + cert.icon : 'fab fa-microsoft'}"></i></div>
-                    <div class="shield-title">${cert.title}</div>
-                    <div class="shield-desc">${cert.desc}</div>
-                    <div class="shield-ribbon">${cert.ribbon}</div>
-                    <div class="shield-status">${cert.status}</div>
+            card.innerHTML = `
+                <div class="cert-card-header">
+                    <span class="cert-category-badge">${cert.title}</span>
+                    <span class="cert-date-badge">${cert.ribbon}</span>
+                </div>
+                <div class="cert-card-body">
+                    <div class="cert-icon-wrapper">
+                        <i class="${cert.icon ? 'fas ' + cert.icon : 'fas fa-certificate'}"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h4>${cert.desc}</h4>
+                        <div class="cert-issuer">
+                            <span><i class="fas fa-award"></i> ${cert.status}</span>
+                            ${cert.image ? '<span class="cert-view-link"><i class="fas fa-file-image"></i> Ver comprovante</span>' : ''}
+                        </div>
+                    </div>
                 </div>
             `;
 
-            shieldsGrid.appendChild(badge);
+            shieldsGrid.appendChild(card);
         });
+
+        atualizarBotaoToggle(deveMostrarTodos, emBuscaOuFiltro);
+    }
+
+    // Botão de expandir / recolher lista de certificações
+    function atualizarBotaoToggle(estaMostrandoTodos, forcarEscondido = false) {
+        let toggleContainer = document.getElementById('certToggleContainer');
+        if (!toggleContainer) {
+            toggleContainer = document.createElement('div');
+            toggleContainer.id = 'certToggleContainer';
+            toggleContainer.className = 'cert-toggle-container';
+            shieldsGrid.parentNode.insertBefore(toggleContainer, shieldsGrid.nextSibling);
+        }
+
+        if (forcarEscondido) {
+            toggleContainer.style.display = 'none';
+            return;
+        }
+
+        toggleContainer.style.display = 'flex';
+        toggleContainer.innerHTML = `
+            <button type="button" id="btnToggleCerts" class="btn-toggle-certs">
+                <i class="fas ${estaMostrandoTodos ? 'fa-chevron-up' : 'fa-chevron-down'}"></i>
+                ${estaMostrandoTodos ? 'Exibir apenas as principais' : 'Ver todas as certificações'}
+            </button>
+        `;
+
+        const btn = toggleContainer.querySelector('#btnToggleCerts');
+        if (btn) {
+            btn.onclick = () => {
+                mostrarTodos = !mostrarTodos;
+                renderCertificates();
+            };
+        }
     }
 
     // Modal Control Functions

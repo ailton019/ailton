@@ -1,0 +1,188 @@
+/**
+ * Fonte única de dados do portfólio e gerador de currículo
+ * Compatível tanto com protocolo HTTP/HTTPS (GitHub Pages) quanto com protocolo file:///
+ */
+window.CURRICULO_DATA = {
+  "perfil": {
+    "nome": "Ailton Rocha Cordeiro",
+    "titulo": "Analista de Sistemas Júnior | Banco de Dados (SQL) | QA e Testes de Software",
+    "subtitulo": "Sustentação N2, Diagnóstico de Causa Raiz (RCA), Validação de APIs REST e Integridade de Dados",
+    "objetivo": "Engenheiro da Computação e pós-graduado em Banco de Dados, com 4 anos de experiência na Linx (Stone Co.) em sustentação N2 de sistemas ERP, análise de causa raiz (RCA) com SQL Server e validação de APIs REST via Postman. Promoção em 6 meses de Suporte Júnior para N2 Pleno, com histórico de 100% de SLA em chamados críticos e redução de 30% na reincidência de falhas operacionais. Vivência prática em homologação de correções com equipes de P&D, elaboração de mais de 10 runbooks técnicos e automação de testes com Robot Framework. Atuação direcionada para vagas de Analista de Sistemas Júnior, Analista de QA Júnior e Analista de Banco de Dados Júnior.",
+    "objetivoResumido": "Engenheiro da Computação e pós-graduado em Banco de Dados com 4 anos na Linx (Stone Co.). Especialista em RCA via SQL Server, validação de APIs e sustentação N2. Foco em vagas de Analista de Sistemas Júnior, QA Júnior e Banco de Dados Júnior.",
+    "localizacao": "São Paulo, SP - Brasil",
+    "telefone": "(11) 95118-8692",
+    "telefoneDisplay": "(11) 95118-8692",
+    "email": "ailtonrocha0199@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/ailton-rocha-b32206172/",
+    "linkedinDisplay": "linkedin.com/in/ailton-rocha-b32206172",
+    "github": "https://github.com/ailton019",
+    "githubDisplay": "github.com/ailton019",
+    "portfolio": "https://ailton019.github.io/ailton/",
+    "idiomas": [
+      {
+        "idioma": "Português",
+        "nivel": "Nativo"
+      },
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado (leitura técnica de documentação e análise de logs)"
+      }
+    ]
+  },
+  "competencias": {
+    "banco_de_dados": {
+      "nome": "Banco de Dados & SQL",
+      "itens": [
+        "SQL Server (Consultas complexas, JOINs, DML, DDL, integridade relacional)",
+        "Diagnóstico de Causa Raiz (RCA) e resolução de incidentes em dados",
+        "Modelagem Relacional de Dados e Criação de Índices",
+        "Pós-graduação Lato Sensu em Banco de Dados"
+      ]
+    },
+    "qa_automacao": {
+      "nome": "Qualidade & Testes (QA)",
+      "itens": [
+        "Testes Funcionais, Testes de Regressão e Validação de Correções",
+        "Validação de APIs REST, Endpoints e Payloads via Postman",
+        "Automação de Testes com Robot Framework (Web e API)",
+        "Investigação de Bugs, Acompanhamento de Falhas e Homologação com P&D"
+      ]
+    },
+    "erp_sustentacao": {
+      "nome": "Sistemas & Sustentação ERP",
+      "itens": [
+        "ERP Microvix e ecossistema TOTVS (Rotinas comerciais, fiscais e faturamento)",
+        "Sustentação N2 de alta criticidade e Gestão de SLA (100% atingido)",
+        "Elaboração de Runbooks Técnicos (mais de 10 guias operacionais elaborados)",
+        "Melhoria contínua de processos e alinhamento com Engenharia de Software"
+      ]
+    },
+    "complementares": {
+      "nome": "Desenvolvimento & Ferramentas",
+      "itens": [
+        "Git & GitHub (Versionamento e controle de branches)",
+        "VS Code, JSON, Postman, Linux",
+        "Noções de C# (.NET), JavaScript (ES6+), HTML5 e CSS3",
+        "Metodologias Ágeis (Scrum/Kanban) e Resolução de Problemas"
+      ]
+    }
+  },
+  "experiencias": [
+    {
+      "cargo": "Analista de Sustentação N2 (Pleno)",
+      "empresa": "Linx (Stone Co.)",
+      "periodo": "2022 – Atual",
+      "bullets": [
+        "Atendimento e sustentação N2 a incidentes críticos de ERP (Microvix/TOTVS), com média de 200 chamados/mês e índice de 100% de SLA alcançado.",
+        "Execução de RCA (Root Cause Analysis) com consultas avançadas em SQL Server e leitura de código, reduzindo em até 30% a reincidência de problemas operacionais.",
+        "Validação técnica de integrações e APIs REST via Postman, homologando correções de bugs diretamente com equipes de P&D em ambientes de homologação e produção.",
+        "Elaboração e manutenção de mais de 10 runbooks técnicos para padronização de procedimentos, nivelamento da equipe e suporte de alto desempenho."
+      ]
+    },
+    {
+      "cargo": "Analista de Suporte Júnior",
+      "empresa": "Linx (Stone Co.)",
+      "periodo": "2022 (Promoção em 6 meses)",
+      "bullets": [
+        "Suporte técnico a clientes do ERP Microvix em rotinas de faturamento, regras fiscais e controle de estoque, com média de 472 chamados/mês e 98% de SLA atingido.",
+        "Triagem qualificada de incidentes e diagnóstico preliminar de divergências em bases relacionais SQL Server.",
+        "Reconhecimento técnico e promoção acelerada para Sustentação N2 Pleno em apenas 6 meses de atuação."
+      ]
+    },
+    {
+      "cargo": "Gerente Geral",
+      "empresa": "City Distribuidora de Bebidas",
+      "periodo": "2020 – 2022",
+      "bullets": [
+        "Liderança direta de equipe com 5 colaboradores, gestão de custos operacionais e controle rigoroso de estoque.",
+        "Premiado e reconhecido como gerente com menor índice de perdas de estoque (produtos vencidos) e destaque contínuo em metas de vendas."
+      ]
+    }
+  ],
+  "formacao": [
+    {
+      "curso": "Pós-graduação em Banco de Dados",
+      "grau": "Especialização Lato Sensu",
+      "instituicao": "Faculdade Líbano",
+      "periodo": "Concluída em 2026",
+      "detalhe": "Especialização voltada a modelagem relacional, estratégias de indexação, consultas complexas e integridade transacional de dados.",
+      "destaque": true
+    },
+    {
+      "curso": "Bacharelado em Engenharia da Computação",
+      "grau": "Graduação",
+      "instituicao": "FAM – Centro Universitário das Américas",
+      "periodo": "2018 – 2023",
+      "detalhe": "Formação sólida em lógica de programação, estruturas de dados, arquitetura de software, redes de computadores e sistemas operacionais.",
+      "destaque": true
+    }
+  ],
+  "certificacoes_destaque": [
+    {
+      "nome": "SQL Server & Banco de Dados Relacional",
+      "emissor": "Especialização Técnica",
+      "ano": "2025 - 2026",
+      "area": "Banco de Dados"
+    },
+    {
+      "nome": "Automação de Testes com Robot Framework (QA)",
+      "emissor": "Certificação Técnica",
+      "ano": "2025 - 2026",
+      "area": "QA & Testes"
+    },
+    {
+      "nome": "Sustentação ERP & Integrações Varejo",
+      "emissor": "Linx Academy / TOTVS",
+      "ano": "2022 - Atual",
+      "area": "ERP Microvix"
+    },
+    {
+      "nome": "Versionamento de Código com Git e GitHub",
+      "emissor": "DIO / Linx",
+      "ano": "2025",
+      "area": "DevOps & Controle"
+    },
+    {
+      "nome": "Validação de APIs REST com Postman",
+      "emissor": "Capacitação Prática",
+      "ano": "2024 - 2025",
+      "area": "Integrações"
+    }
+  ],
+  "projetos": [
+    {
+      "id": "proj-r99",
+      "ordem": 1,
+      "nome": "ERP Microvix – Rotinas",
+      "problema": "Centraliza rotinas críticas, consultas rápidas e documentação de processos operacionais do ERP Microvix (nascido da vivência real de sustentação N2).",
+      "stack": "HTML5, CSS3, JavaScript, Docs Técnicos",
+      "status": "Ativo",
+      "emConstrucao": false,
+      "destaqueReal": true,
+      "demo": "https://ailton019.github.io/r99/",
+      "codigo": "https://github.com/ailton019/r99"
+    },
+    {
+      "id": "proj-controle-financeiro",
+      "ordem": 2,
+      "nome": "Controle Financeiro",
+      "problema": "Gerenciamento e acompanhamento visual de entradas, despesas e fluxo de caixa com persistência local em navegador e relatórios instantâneos.",
+      "stack": "HTML5, CSS3, JavaScript, LocalStorage",
+      "status": "Ativo",
+      "emConstrucao": false,
+      "demo": "https://ailton019.github.io/controle_financ/",
+      "codigo": "https://github.com/ailton019/controle_financ"
+    },
+    {
+      "id": "proj-checklist",
+      "ordem": 3,
+      "nome": "Checklist Interativo (com persistência)",
+      "problema": "Organização e rastreamento de tarefas e rotinas operacionais com armazenamento em LocalStorage e métricas visuais de progresso.",
+      "stack": "HTML5, CSS3, JavaScript, LocalStorage",
+      "status": "Ativo",
+      "emConstrucao": false,
+      "demo": "https://ailton019.github.io/Checklist/",
+      "codigo": "https://github.com/ailton019/Checklist"
+    }
+  ]
+};
